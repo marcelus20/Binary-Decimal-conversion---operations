@@ -4,7 +4,8 @@ public class Main {
 
     Main(){
         System_controller sys = new System_controller();
-        System.out.println(sys.str_mult("0",4));
+        sys.to_binary(25);
+        //sys.print(1%2);
     }
 
     public static void main(String[] args) {
