@@ -1,8 +1,6 @@
 package com.jetbrains;
 
-import java.text.DecimalFormat;
-
-public class Decimal_to_Binary {
+public class Decimal_to_Binary extends System_ {
 
 
     String g_bin = "";
@@ -64,22 +62,6 @@ public class Decimal_to_Binary {
     //RETRIEVES ONLY THE DECIMAL PLACES OF A NUMBER
     double douB(double d){
         return d - inT(d);
-    }
-
-
-
-    //JUST A EASY WAY OF CALLING PRINTLN
-    void print(Object a){
-        System.out.println(a);
-    }
-
-    ///THE METHOD FOR ADDING ZEROS IN A 8 OR 16 BITS STRINGS IS DONE
-    String str_mult(String str, int times){
-        String text = "";
-        for (int i = 0; i <times; i++){
-            text += str;
-        }
-        return text;
     }
 
     ///PRINTING NUMBER IN N BITS
