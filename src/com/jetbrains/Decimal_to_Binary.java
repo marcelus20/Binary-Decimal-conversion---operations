@@ -5,6 +5,7 @@ public class Decimal_to_Binary extends System_ {
 
     String g_bin = "";
     String g_bin_deci = "";
+    int bits;
 
 
     //DECIMAL TO BINARY CONVERTER CODE
@@ -23,8 +24,15 @@ public class Decimal_to_Binary extends System_ {
         decimal_bi = g_bin_deci;
         binary += "."+decimal_bi;
 
+        if (binary.length() < 8){
+            bits = 8;
+        }else if(binary.length() < 16){
+            bits = 16;
+        }else if(binary.length() < 24){
+            bits = 24;
+        }
 
-        return binary;
+        return str_mult("0", bits-binary.length()-1)+binary;
 
     }
 

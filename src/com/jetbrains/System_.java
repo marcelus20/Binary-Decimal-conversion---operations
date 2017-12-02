@@ -16,4 +16,16 @@ public class System_ {
     void print(Object a){
         System.out.println(a);
     }
+
+    //METHOD TO CARRY OUT THE INVERSION OF STRINGS:
+    String inverter(String str){
+        String text =  "";
+        String[] str_arr = str.split("");
+
+        for (int i = str_arr.length-1; i>=0; i--){
+            text += str_arr[i];
+        }
+
+        return text;
+    }
 }
