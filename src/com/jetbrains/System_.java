@@ -12,7 +12,7 @@ public class System_ {
     }
 
 
-    //JUST A EASY WAY OF CALLING PRINTLN
+    //JUST AN EASY WAY OF CALLING PRINTLN
     void print(Object a){
         System.out.println(a);
     }
@@ -27,5 +27,26 @@ public class System_ {
         }
 
         return text;
+    }
+
+    String two_compl_retriever(String binary){
+
+        String text = "";
+        String[] binary_arr = binary.split("");
+        for (int i = 0; i< binary_arr.length; i++){
+            if (binary_arr[i].equals("1")){
+                text += "0";
+            }else{
+                text += "1";
+            }
+        }
+
+        //MAKING THE RESULT TO BE SUMMED +1
+        //CREATING AN INSTANCE OF SYS_OPERATIONS
+        Sys_operations sys = new Sys_operations();
+
+        //print("Inverse code "+text);
+        //print("two complement "+sys.add(text, "1"));
+        return sys.add(text, "1");
     }
 }
