@@ -4,15 +4,31 @@ public class Main extends System_{
 
     Main(){
 
-        Decimal_to_Binary sys = new Decimal_to_Binary();
+        Decimal_to_Binary db = new Decimal_to_Binary();
         Binary_to_Deciimal bt = new Binary_to_Deciimal();
         Sys_operations s = new Sys_operations();
-        print(s.sub("111111111", "1"));
 
-        //bt.Bin_to_Dec("110011");
+        //CONVERTING TEST: BINARY TO DECIMAL:
+        bt.Bin_to_Dec("110011");
+        print("____________________________________");
 
-        //s.two_compl_retriever("00000000001");
+        //CONVERTING TEST: DECIMAL TO BINARY
+        print(db.to_binary(22.4448));
+        print("____________________________________");
+        print(db.to_binary(15));
+        print("____________________________________");
 
+        //test: ADDITION BETWEEN TWO NUMBERS:
+        print(s.add("1011", "1"));
+        print("____________________________________");
+
+        //TEST: SUBTRACTION:
+        print(s.sub("1011111","1111"));
+        print("____________________________________");
+
+        //MULTIPLICATION:
+        s.mult("10","10");
+        print("____________________________________");
 
 
     }
