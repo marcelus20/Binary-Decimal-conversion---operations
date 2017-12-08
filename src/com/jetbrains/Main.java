@@ -9,25 +9,25 @@ public class Main extends System_{
         Sys_operations s = new Sys_operations();
 
         //CONVERTING TEST: BINARY TO DECIMAL:
-        bt.Bin_to_Dec("110011");
+        //bt.Bin_to_Dec("101");
         print("____________________________________");
 
         //CONVERTING TEST: DECIMAL TO BINARY
-        print(db.to_binary(22.4448));
+        //print(db.to_binary(22.4448));
         print("____________________________________");
-        print(db.to_binary(15));
+        //print(db.to_binary(15));
         print("____________________________________");
 
         //test: ADDITION BETWEEN TWO NUMBERS:
-        print(s.add("1011", "1"));
+        print(s.add("10", "1"));
         print("____________________________________");
 
         //TEST: SUBTRACTION:
-        print(s.sub("1011111","1111"));
-        print("____________________________________");
+        //print(s.sub("1011111","1111"));
+        //print("____________________________________");
 
         //MULTIPLICATION:
-        s.mult("10","10");
+        //s.mult("100001","10");
         print("____________________________________");
 
 

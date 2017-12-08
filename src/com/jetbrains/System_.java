@@ -58,12 +58,13 @@ public class System_ {
     //GENERAL FORMULAE: IF BIGGEST <= 2^I THEN bits = 2^I
     public int bit_set(int biggest){
         int bits = 0 ;
-        for (int i = 0; i<=Math.pow(2,10); i++){// STOP = 1024
-            if (biggest <= Math.pow(2,i)){// IF FINDS BIGGEST SMALLER THAN 2^I
+        for (int i = 0; i<Math.pow(2,10); i++){// STOP = 1024
+            if (biggest < Math.pow(2,i)){// IF FINDS BIGGEST SMALLER THAN 2^I
                 bits = (int)Math.pow(2,i);//ASSGIN THE VALUE
                 i = (int)Math.pow(2,10);//BREAKS THE LOOP
             }
         }
+        
         return bits;
     }
 

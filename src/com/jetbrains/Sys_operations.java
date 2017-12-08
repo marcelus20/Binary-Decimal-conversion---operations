@@ -17,6 +17,7 @@ public class Sys_operations extends System_{
         //FIDING THE CORRESPONDING BIT VALUE
         bits = bit_set(biggest);
 
+
         //print(bits);
         a = str_mult("0", bits-a.length())+a;
         b = str_mult("0", bits-b.length())+b;
@@ -74,7 +75,8 @@ public class Sys_operations extends System_{
         //print(a);
         //print(b);
         //print(inverter(result));
-        return inverter(result);
+
+        return str_mult("0", bits-result.length())+inverter(result);
     }
 
 
