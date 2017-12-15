@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dad6b946-d7a8-4c7b-b701-a5ce58ae8148" name="Default" comment="" />
+    <list default="true" id="dad6b946-d7a8-4c7b-b701-a5ce58ae8148" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Application.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="246">
+              <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding>
                 <element signature="method#welcome#0;class#Application#0" expanded="false" />
                 <element signature="method#menu#0;class#Application#0" expanded="false" />
@@ -38,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="410">
@@ -51,8 +54,8 @@
       <file leaf-file-name="Auxiliar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-642">
-              <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+            <state relative-caret-position="328">
+              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#number_catcher#0;class#Auxiliar#0" expanded="false" />
@@ -85,9 +88,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/jetbrains/Frame_model.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
-        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
       </list>
     </option>
   </component>
@@ -282,10 +285,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-642">
-          <caret line="21" column="69" lean-forward="false" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+        <state relative-caret-position="328">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#number_catcher#0;class#Auxiliar#0" expanded="false" />
@@ -297,20 +308,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="246">
+          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
