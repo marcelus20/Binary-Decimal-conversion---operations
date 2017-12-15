@@ -75,7 +75,36 @@ public class Auxiliar{
 
     }
 
+    /*THIS METHOD DOES THE SAME AS ARR_PRINTER, THE DIFFERENCE IS THAT, INSTEAD OF CENTRILIZED, IT WI
+    *IT WILL PRINT AS AN ORDERED LIST
+    */
+    void arr_printer_ordered(String[] arr){
+        /*
+         * NOW, IT WILL BE CHECKED WHAT LENGTH THE ARRAY WILL HAVE BASED ON THE INDEX THAT
+         * HAS THE LARGEST STRING LENGTH. THIS FOR LOOP WILL CHECK WHAT INDEX HOLDS THE BIGGEST STRING LENGTH
+         */
+        int width = 0;
+        for (int i = 0; i<arr.length; i++){
+            if (arr[i].length()>width){
+                width = arr[i].length();
+            }
+        }
+        /*
+        * AT THIS POINT, WIDTH IS SET UP, LET'S ADD TWO MORE SPACES IN ONE SIDE
+        * */
+        width +=2;
 
+        //LET'S BEGIN THE PRINTING
+        print("+"+mult_str("-", width+3)+"+");
+        for (int i = 0; i<arr.length; i++){
+            //ARRAGING THE SPACES USING BASED ON THE WIDTH)
+            String line_width = mult_str(" ", width-arr[i].length());
+            print("|"+String.valueOf(i+1)+". "+arr[i]+line_width+"|");
+        }
+        print("+"+mult_str("-", width+3)+"+");
+
+
+    }
     /*
      *THIS METHOD RETURNS HOW MANY TIMES YOU WANT A STRING TO BE MULTIPLYED
      * FOR EXAMPLE, IF YOU DO mult_str("0", 7), THE RETURN WILL BE "0000000"
