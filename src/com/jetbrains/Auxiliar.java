@@ -27,7 +27,7 @@ public class Auxiliar{
         do{
             try{
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-                print(msg);
+                System.out.print(msg);
                 line = br.readLine();
             }catch(Exception e){}
             if (!line.matches(regex)){
@@ -75,6 +75,7 @@ public class Auxiliar{
 
     }
 
+
     /*THIS METHOD DOES THE SAME AS ARR_PRINTER, THE DIFFERENCE IS THAT, INSTEAD OF CENTRILIZED, IT WI
     *IT WILL PRINT AS AN ORDERED LIST
     */
@@ -105,6 +106,8 @@ public class Auxiliar{
 
 
     }
+
+
     /*
      *THIS METHOD RETURNS HOW MANY TIMES YOU WANT A STRING TO BE MULTIPLYED
      * FOR EXAMPLE, IF YOU DO mult_str("0", 7), THE RETURN WILL BE "0000000"
