@@ -147,4 +147,23 @@ public class Auxiliar extends Operations{
 
     return new_str;
     }
+
+
+    /*
+    * THIS METHOD WILL RETURN A BOOLEAN VARIABLE. IT'S FOR CHECKING WHETHER THE BINARY
+    * STRING IS DOUBLE OR NOT.
+    * */
+    boolean is_double(String bin){
+        //TURNING BIN INTO AN ARRAY:
+        String[] arr_bin = bin.split("");
+
+        //CHECKING FOR POINTS IN THE STRING.
+        //IF THERE IS POINT, THEN IT IS DOUBLE
+        for(int i = 0; i<arr_bin.length; i++){
+            if(arr_bin[i].equals(".")){
+                return true;
+            }
+        }
+    return false;
+    }
 }
