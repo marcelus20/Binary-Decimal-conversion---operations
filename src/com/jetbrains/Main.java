@@ -6,10 +6,10 @@ public class Main extends Application{
         //print(number_catcher("", "", ""));
         //String[] a = new String[]{"hello", "How are you", "yay"};
         //arr_printer(a);
-        welcome();
-        //add_bin();
-        //num_adjuster("001101");
-        print(is_double("11.1100"));
+        //welcome();
+        add_bin();
+        //print(num_adjuster("0001.00000001"));
+        //print(is_double("11.0"));
 
 
     }

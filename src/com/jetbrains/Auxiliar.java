@@ -130,22 +130,60 @@ public class Auxiliar extends Operations{
         String[] arr_bin = bin.split("");
 
         String new_str = "";
-        int index = 0;
+        if (!is_double(bin)){
+            int index = 0;
 
-        //CHECKING WHICH INDEX THE THE NUMBER 1 APPEARS FROM LEFT TO RIGHT
-        for (int i = 0; i<arr_bin.length; i++){
-            if(arr_bin[i].equals("1")){
-                index = i;
-                break;
+            //CHECKING WHICH INDEX THE THE NUMBER 1 APPEARS FROM LEFT TO RIGHT
+            for (int i = 0; i<arr_bin.length; i++){
+                if(arr_bin[i].equals("1")){
+                    index = i;
+                    break;
+                }
             }
-        }
-        //LOOPING FOR FILLING THE NEW STRING WITH THE NUMBER WITHOUT 0 AT THE FRONT
-        //THIS WILL BE DONE BASED ON THE INDEX RETRIEVED FROM THE PREVIOUS LOOP
-        for (int i = index; i<arr_bin.length; i++){
-            new_str += arr_bin[i];
-        }
+            //LOOPING FOR FILLING THE NEW STRING VARIABLE WITH THE NUMBER WITHOUT 0 AT THE FRONT
+            //THIS WILL BE DONE BASED ON THE INDEX RETRIEVED FROM THE PREVIOUS LOOP
+            for (int i = index; i<arr_bin.length; i++){
+                new_str += arr_bin[i];
+            }
+            return new_str;
+        }else{
+            //IF IT ENDS WITH . GET RID OF .
+            if(arr_bin[arr_bin.length-1].equals(".")){
+                for (int i = 0; i< arr_bin.length-1; i++){
+                    new_str += arr_bin[i];
+                }
+                //AT THIS POINT, NEW_STR IS NO LONGER DOUBLE, SO CARRY OUT adjuster FUNCTION RECURSIVELY
+                new_str = num_adjuster(new_str);
+                return new_str;
+            }else{
+                String integer = bin.split("\\.")[0];
+                String decimal = bin.split("\\.")[1];
+                String[] arr_decimal = decimal.split("");
+                boolean only_zeros = true;
+                int index = 0;
+                for (int i = arr_decimal.length-1; i >= 0; i--){
+                    if (arr_decimal[i].equals("1")){
+                        only_zeros = false;
+                        index = i+1;
+                        break;
+                    }
+                }
+                if(only_zeros){
+                    return num_adjuster(integer);
+                }else{
+                    new_str = integer;
+                    new_str = num_adjuster(new_str)+".";
+                    for (int i = 0; i< index; i++){
+                        new_str +=arr_decimal[i];
+                    }
+                    return new_str;
+                }
 
-    return new_str;
+
+            }
+
+
+        }
     }
 
 
@@ -160,10 +198,13 @@ public class Auxiliar extends Operations{
         //CHECKING FOR POINTS IN THE STRING.
         //IF THERE IS POINT, THEN IT IS DOUBLE
         for(int i = 0; i<arr_bin.length; i++){
-            if(arr_bin[i].equals(".")){
+            if(arr_bin[i].equals(".") || arr_bin[arr_bin.length-1].equals(".")){
                 return true;
             }
         }
+
+
+
     return false;
     }
 }
