@@ -124,6 +124,7 @@ public class Auxiliar extends Operations{
     /*
     * THIS METHOD WILL REGULATE THE STRING, IF IT BEGIN WITH ZEROS, THEY WILL VANISH
     * IF IT ENDS WITH ZEROS AFTER DECIMAL PLACE, THEY WILL VANISH AS WELL
+    * FOR EXAMPLE, IF USER TYPES 000111010.100000, THE OUTPUT WILL BE 111010.1
     * */
     String num_adjuster(String bin){
         //TURNING THIS BINARY STRING INTO AN ARRAY
@@ -159,8 +160,10 @@ public class Auxiliar extends Operations{
                 String integer = bin.split("\\.")[0];
                 String decimal = bin.split("\\.")[1];
                 String[] arr_decimal = decimal.split("");
+                //IF decimal VARIABLE HAS ONLY ZEROS, NUMBER IS JUST INTEGER, SO GET RID OF ZEROS AND DOT
                 boolean only_zeros = true;
                 int index = 0;
+                //THIS FOR WILL CHECK IF THERE "1" IN DECIMAL ARRAY, IF SO, THEN THIS IS A DOUBLE BINARY.
                 for (int i = arr_decimal.length-1; i >= 0; i--){
                     if (arr_decimal[i].equals("1")){
                         only_zeros = false;
@@ -168,6 +171,12 @@ public class Auxiliar extends Operations{
                         break;
                     }
                 }
+                /*
+                * IF ONLY ZERO IS TRUE, IT MEANS THAT THE NUMBER IS INTEGER, SO IT WILL BE USED JUST THE VARIABLE
+                * INTEGER PART OF THE BINARY.
+                * IF IT IS FALSE, ONE MORE FOR WILL HAVE TO HAPPEN IN ORDER TO CONCATENATE THE INTEGER PART WITH
+                * THE ADJUSTED DECIMAL PART (GETTING RID OF THE EXCESSIVE ZEROS AT THE END IF THERE IS ANY)
+                * */
                 if(only_zeros){
                     return num_adjuster(integer);
                 }else{
@@ -178,11 +187,7 @@ public class Auxiliar extends Operations{
                     }
                     return new_str;
                 }
-
-
             }
-
-
         }
     }
 
