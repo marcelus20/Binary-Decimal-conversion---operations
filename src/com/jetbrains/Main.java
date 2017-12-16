@@ -7,7 +7,9 @@ public class Main extends Application{
         //String[] a = new String[]{"hello", "How are you", "yay"};
         //arr_printer(a);
         welcome();
-        menu();
+        add_bin();
+        //num_adjuster("001101");
+
 
     }
 

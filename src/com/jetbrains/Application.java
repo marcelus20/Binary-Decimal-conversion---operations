@@ -35,7 +35,13 @@ public class Application extends Auxiliar{
     }
     void bin_to_Decimal(){}
     void decimal_to_bin(){}
-    void add_bin(){}
+    void add_bin(){
+        //INVITING USER TO INSERT THE FIRST BINARY NUMBER:
+        String num_1 = number_catcher("Insert the first binary: ",
+                "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0, double or integers");
+        num_1 = num_adjuster(num_1);
+        print(num_1);
+    }
     void sub_bin(){}
     void mult_bin(){}
     void div_bin(){}

@@ -120,4 +120,31 @@ public class Auxiliar extends Operations{
         return text;
     }
 
+
+    /*
+    * THIS METHOD WILL REGULATE THE STRING, IF IT BEGIN WITH ZEROS, THEY WILL VANISH
+    * IF IT ENDS WITH ZEROS AFTER DECIMAL PLACE, THEY WILL VANISH AS WELL
+    * */
+    String num_adjuster(String bin){
+        //TURNING THIS BINARY STRING INTO AN ARRAY
+        String[] arr_bin = bin.split("");
+
+        String new_str = "";
+        int index = 0;
+
+        //CHECKING WHICH INDEX THE THE NUMBER 1 APPEARS FROM LEFT TO RIGHT
+        for (int i = 0; i<arr_bin.length; i++){
+            if(arr_bin[i].equals("1")){
+                index = i;
+                break;
+            }
+        }
+        //LOOPING FOR FILLING THE NEW STRING WITH THE NUMBER WITHOUT 0 AT THE FRONT
+        //THIS WILL BE DONE BASED ON THE INDEX RETRIEVED FROM THE PREVIOUS LOOP
+        for (int i = index; i<arr_bin.length; i++){
+            new_str += arr_bin[i];
+        }
+
+    return new_str;
+    }
 }
