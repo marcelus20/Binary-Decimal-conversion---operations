@@ -308,7 +308,7 @@ public class Auxiliar extends Operations{
     }
 
     //THIS METHOD RETRIEVES THE NUMBER OF DECIMAL PLACES OF THE DOT IN A DOUBLE BINARY
-    int dot_index(String bin){
+    int places_after_dot(String bin){
         int d_places = 0;
         String[] arr_bin = bin.split("");
         for(int i = 0; i < arr_bin.length; i++){
@@ -319,6 +319,20 @@ public class Auxiliar extends Operations{
         }
         //print(d_places);
         return d_places-1;
+    }
+
+
+    //THIS METHOD IS RESPONSIIBLE FOR INSERTING THE DOT INTO A STRING. YOU HAVE TO PASS THE DOT_INDEX AS A PARAMETER
+    String dot_insertion(String bin, int index){
+        String text = "";
+        String[] arr_bin = bin.split("");
+        for (int i = 0; i<arr_bin.length; i++){
+            text += arr_bin[i];
+            if (i == bin.length()-index-1){
+                text+=".";
+            }
+        }
+        return text;
     }
 
 }
