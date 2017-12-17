@@ -13,6 +13,7 @@ public class Main extends Application{
         //length_settler("100","10.101010");
         //("111.111");
         //dot_insertion("111111", 3);
+        //print(dot_deletion("11.11"));
 
     }
 

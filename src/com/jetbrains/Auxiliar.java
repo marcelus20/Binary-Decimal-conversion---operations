@@ -335,5 +335,10 @@ public class Auxiliar extends Operations{
         return text;
     }
 
+    //THIS METHOD WILL DELET DOT FROM A DOUBLE BINARY
+    String dot_deletion(String bin){
+        return bin.replace(".","");
+    }
+
 }
 

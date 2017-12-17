@@ -3,22 +3,27 @@ package com.jetbrains;
 public class Operations{
     void sum (String a, String b){
         Auxiliar aux = new Auxiliar();
+        boolean doub = aux.is_double(a);
         int carry_up = 0;
-        int index = 0;
-        String a_temp;
-        String b_temp;
+
+        //THE INDEX OF THE DOT WILL BE RETRIEVED FOR LATER ON PUTTING IT BACK IN.
+        int dot_index = aux.places_after_dot(a);
+
 
         String[] arr_a;
         String[] arr_b;
 
+        /*
+        * IF A IS DOUBLE, THEN B IS. BECAUSE THE PARAMETERS ARE EXTERNALLY FIXED BEFORE THIS METHOD IS FIRED.
+        * WE WILL GET RID OF THE DOT, CARRY OUT THE ADDITION AND THEN WE WILL PUT THE DOT BACK IN
+        * ALL OF THIS WILL BE DONE BY THE METHODS IN THE AUXILIAR CLASS
+        * */
         if(aux.is_double(a)){
-            a_temp = a.split("\\.")[0]+a.split("\\.")[1];
-            b_temp = b.split("\\.")[0]+b.split("\\.")[1];
-            index = aux.places_after_dot(a);
-            aux.print(a);
-            aux.print(b);
-            arr_a = a_temp.split("");
-            arr_b = b_temp.split("");
+            a = aux.dot_deletion(a);
+            b = aux.dot_deletion(b);
+
+            arr_a = a.split("");
+            arr_b = b.split("");
 
         }else{
             arr_a = a.split("");
@@ -59,32 +64,29 @@ public class Operations{
                     carry_up = 0;
                 }
             }
-
         }
 
         //ADDING THAT EXTRA BIT IN CASE THE CARRY UP IS ONE AND IT HAS RUN OUT OF DIGITS
         if (carry_up == 1){
             result += "1";
         }
+        //INVERTING THE RESULT, CAUSE THE WAY IT WAS PROGRAMMED, THE RESULT IS GIVEN BACKWARDS.
         result = aux.inverter(result);
-        if (aux.is_double(a)){
-            result = aux.dot_insertion(a, index);
+
+        /*
+        * IF A WAS ORIGINALLY DOUBLE, WE HAVE TO PUT THE DOT BACK IN THE STRING
+        * WITH YOUR RESPECTIVE INDEX
+        * */
+        if (doub){
+            result = aux.dot_insertion(result, dot_index);
         }
+
+        //BEFORE PRINTING THE RESULT, WE SHOULD FIX THE EXCESSIVE ZEROS, IF IT HAS
+        result = aux.num_adjuster(result);
+
+        //FINALLY PRINTING THE RESULT
         aux.print(result);
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
+    }
     void sub (String a, String b){}
     void mult(String a, String b){}
     void dev (String a, String b){}
