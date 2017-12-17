@@ -288,12 +288,38 @@ public class Auxiliar extends Operations{
                 a = mult_str("0", biggest-a.length())+a;
             }
         }
-        print(a);
-        print(b);
-        return tuple;// JAVA DOES NOT HAVE TUPLE, SO IT WILL RETURN AN ARRAY INSTEAD
+        tuple[0] = a;
+        tuple[1] = b;
+        return tuple;// JAVA DOES NOT SUPPORT TUPLES, SO IT WILL RETURN AN ARRAY INSTEAD
     }
 
+    /*
+    * THIS METHOD WILL SIMPLY INVERT THE STRING THAT RECEIVE AS A PARAMETER
+    * EG: inverter("abc") -> output is "cba"
+    * */
+    String inverter(String binary){
+        String text = "";
+        String[] bin_arr= binary.split("");
+        for (int i = bin_arr.length-1; i >= 0; i--){
+            text += bin_arr[i];
+        }
 
+        return text;
+    }
+
+    //THIS METHOD RETRIEVES THE NUMBER OF DECIMAL PLACES OF THE DOT IN A DOUBLE BINARY
+    int dot_index(String bin){
+        int d_places = 0;
+        String[] arr_bin = bin.split("");
+        for(int i = 0; i < arr_bin.length; i++){
+            if(arr_bin[i].equals(".")){
+                d_places = arr_bin.length-i;
+                break;
+            }
+        }
+        //print(d_places);
+        return d_places-1;
+    }
 
 }
 

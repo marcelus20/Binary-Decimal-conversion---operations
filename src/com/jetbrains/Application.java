@@ -53,10 +53,19 @@ public class Application extends Auxiliar{
         * THE SIZE OF THE BIGGEST, BEING SETTLED WITH SAME LENGTH BOTH
         *
         * */
-
-
+        num_1 = length_settler(num_1, num_2)[0];
+        num_2 = length_settler(num_1, num_2)[1];
 
         print(num_1);
+        print(num_2);
+        print(mult_str("_", num_1.length()));
+
+        //NOW, FINALLY THE CALCULATOR WILL BE CALLED:
+        sum(num_1, num_2);
+
+
+
+
     }
     void sub_bin(){}
     void mult_bin(){}
