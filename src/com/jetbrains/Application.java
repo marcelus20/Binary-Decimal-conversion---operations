@@ -39,7 +39,23 @@ public class Application extends Auxiliar{
         //INVITING USER TO INSERT THE FIRST BINARY NUMBER:
         String num_1 = number_catcher("Insert the first binary: ",
                 "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0, double or integers");
+
+        //INVITING USER TO TYPE THE SECOND BINARY
+        String num_2 = number_catcher("Insert the second binary: ",
+                "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0, double or integers");
+
         num_1 = num_adjuster(num_1);
+        num_2 = num_adjuster(num_2);
+
+        /*
+        * NOW, BEFORE CARRYING OUT THE SUM, WE NEEED TO MAKE SURE BOTH STRINGS HAS SAME LENGTH
+        * FOR THAT, A METHOD FROM THE AUXILIARY CLASS WILL FILL THE SMALLER STRING WITH ZEROS UNTIL IT GETS
+        * THE SIZE OF THE BIGGEST, BEING SETTLED WITH SAME LENGTH BOTH
+        *
+        * */
+
+
+
         print(num_1);
     }
     void sub_bin(){}

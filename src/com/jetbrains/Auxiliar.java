@@ -212,4 +212,88 @@ public class Auxiliar extends Operations{
 
     return false;
     }
+
+    /*
+    * THIS METHOD WILL MAKE TO BINARY NUMBERS BE SAME LENGTH, FILLING THE SMALL STRING WITH ZEROS UNTIL GETS
+    * THE LENGTH OF THE BIGGEST, SO IT WILL RECEIVE TWO PARAMETERS
+    * */
+
+    String[] length_settler(String a, String b){
+        String[] tuple = new String[2];
+        int biggest;
+        int d_biggest;
+        String a_integer = "";
+        String a_decimal = "";
+        String b_integer = "";
+        String b_decimal = "";
+
+        /*
+        * WE NEED TO CHECK IF THE BINARY IS DOUBLE, IF SO, THE FILLING WITH ZEROS FOR THE INTEGER PART
+        * WILL BE DIFFERENT FOR THE DECIMAL PART. INTEGER THE FILLING WILL BE FROM AT THE START, ON THE
+        * OTHER HAND, DECIMAL WILL BE AT THE END
+        * */
+        if(is_double(a) || is_double(b)){
+            //FIXING VARIABLES IN ALL DIFFERENT POSSIBILITIES (3)
+            if (is_double(a) && !is_double(b)) {
+                //THIS IF WILL FIRE IF A IS DOUBLE AND B IS NOT
+                a_integer = a.split("\\.")[0];
+                a_decimal = a.split("\\.")[1];
+                b_integer = b;
+                b_decimal = "0";
+            }else if (!is_double(a) && is_double(b)){
+                //THIS IF WILL FIRE IF A IS NOT DOUBLE AND B IS
+                a_integer = a;
+                a_decimal = "0";
+                b_integer = b.split("\\.")[0];
+                b_decimal = b.split("\\.")[1];
+            }else{
+                //IT WILL FIRE IF BOTH ARE DOUBLE
+                a_integer = a.split("\\.")[0];
+                a_decimal = a.split("\\.")[1];
+                b_integer = b.split("\\.")[0];
+                b_decimal = b.split("\\.")[1];
+            }
+            //AT THIS POINT, VARIABLES ARE FIXED, SO WE CAN WORK ON FILLING WITH ZEROS
+            //CHECKING INTEGER PART
+            if(a_integer.length() >= b_integer.length()){
+                biggest = a_integer.length();
+                //FILLING B WITH ZEROS
+                b_integer = mult_str("0",biggest-b_integer.length())+b_integer;
+            }else{
+                biggest = b_integer.length();
+                //FILLING A WITH ZEROS IF A IS SMALLER
+                a_integer = mult_str("0",biggest-a_integer.length())+a_integer;
+            }
+            //CHECKING DECIMAL
+            if (a_decimal.length()>=b_decimal.length()){
+                d_biggest = a_decimal.length();
+                b_decimal = b_decimal + mult_str("0",d_biggest-b_decimal.length());
+            }else{
+                d_biggest = b_decimal.length();
+                a_decimal = a_decimal + mult_str("0",d_biggest-a_decimal.length());
+            }
+            //JOING BOTH DECIMAL PART AND INTEGER PART WITH THEIR FIXED LENGTHS
+            a = a_integer + "." + a_decimal;
+            b = b_integer + "." + b_decimal;
+
+        }else{//IF CODE REACHES HERE, IT MEANS THAT BOTH ARE INTEGERS
+            //CHECKING WHO IS TE BIGGEST STRING;
+            if(a.length()>= b.length()){
+                biggest = a.length();
+                //FILLING B WITH ZEROS USING THE FUNCTION STRING MULTIPLYERS
+                b = mult_str("0", biggest-b.length())+b;
+            }else{
+                biggest = b.length();
+                //FILLING A WITH ZEROS IF A IS SMALLER
+                a = mult_str("0", biggest-a.length())+a;
+            }
+        }
+        print(a);
+        print(b);
+        return tuple;// JAVA DOES NOT HAVE TUPLE, SO IT WILL RETURN AN ARRAY INSTEAD
+    }
+
+
+
 }
+
