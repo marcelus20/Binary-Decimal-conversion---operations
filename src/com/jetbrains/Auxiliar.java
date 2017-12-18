@@ -376,5 +376,22 @@ public class Auxiliar extends Operations{
 
     }
 
+    //THIS FUNCTION WILL DO THE TWOS COMPLEMENT OF A BINARY
+    String two_comp(String bin){
+        String text = "";
+        String[] arr_bin = bin.split("");
+        for (int i = 0; i< bin.length(); i++){
+            if (arr_bin[i].equals("0")){
+                text += "1";
+            }else{
+                text += "0";
+            }
+        }
+        String operand = mult_str("0",text.length()-1)+"1";
+        //print(text);
+        text = sum(text,operand);
+        print(text);
+        return text;
+    }
 }
 

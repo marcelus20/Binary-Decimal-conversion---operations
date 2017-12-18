@@ -61,7 +61,15 @@ public class Application extends Auxiliar{
         print("+" + mult_str("_", num_1.length()));
 
         //NOW, FINALLY THE CALCULATOR WILL BE CALLED:
-        sum(num_1, num_2);
+        String result = sum(num_1, num_2);
+
+        String resul_bits = n_bits(result);
+
+        print("Raw result: "+ result);
+        print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+resul_bits);
+
+
+
         menu();
     }
     void sub_bin(){}

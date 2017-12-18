@@ -1,7 +1,7 @@
 package com.jetbrains;
 
 public class Operations{
-    void sum (String a, String b){
+    String sum (String a, String b){
         Auxiliar aux = new Auxiliar();
         boolean doub = aux.is_double(a);
         int carry_up = 0;
@@ -84,18 +84,24 @@ public class Operations{
         //BEFORE PRINTING THE RESULT, WE SHOULD FIX THE EXCESSIVE ZEROS, IF IT HAS
         result = aux.num_adjuster(result);
 
-        //RETRIEVING THE RESULT IN A CORRECT BITS CATEGORY: 2^N
-        String resul_bits = aux.n_bits(result);
-
-        //FINALLY PRINTING THE RESULT
-        aux.print("Result: "+ result);
-        aux.print("Result in "+resul_bits.split("\\.")[0].length()+" bits: "+resul_bits);
+        //FINALLY RETURNUNG RESULT
+        return result;
     }
-    void sub (String a, String b){}
+    void sub (String a, String b){
+        Auxiliar aux = new Auxiliar();
+
+        a = aux.length_settler(a,b)[0];
+        b = aux.length_settler(a,b)[1];
+
+        b = aux.two_comp(b);
+        aux.print(b);
+        aux.print(sum(a,b));
+    }
     void mult(String a, String b){}
     void dev (String a, String b){}
 
     //CONVERTIONS
     void bin_to_dec(String number){}
     void dec_to_bin(String number){}
+
 }
