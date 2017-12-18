@@ -340,5 +340,41 @@ public class Auxiliar extends Operations{
         return bin.replace(".","");
     }
 
+    /*
+    * THIS METHOD WILL ADD A BINARY NUMBER EXTRA ZEROS UNTIL IT HAS REACHED 8 OR 16 OR 2^n BITS
+    * DEPENDING ON THE LENGTH OF THE BIN. IF THE BIN HAS LENGTH 5, THE NEXT 2^n, N SHOULD BE 4 THEN 8.
+    * EG: n_bits("11101");
+    * n_bits("1")
+    * n_bits("11111111111")
+    * OUTPUT:::
+    * "00011101"
+    * "01"
+    * "0000011111111111"
+    *  */
+    String n_bits(String bin){
+        int bit = 0;
+        String bin_integer;
+
+        if(is_double(bin)){
+            bin_integer = bin.split("\\.")[0];
+            for (int i = 0; i<Math.pow(2,10); i++){
+                if(bin_integer.length()>Math.pow(2,i)){
+                    bit = (int)Math.pow(2,i+1);
+                }
+            }
+            return mult_str("0",bit-bin_integer.length())+bin_integer + "." + bin.split("\\.")[1];
+        }else{
+            for (int i = 0; i<Math.pow(2,10); i++){
+                if(bin.length()>Math.pow(2,i)){
+                    bit = (int)Math.pow(2,i+1);
+                }
+            }
+            return mult_str("0",bit-bin.length())+bin;
+        }
+
+
+
+    }
+
 }
 

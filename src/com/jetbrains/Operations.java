@@ -84,8 +84,12 @@ public class Operations{
         //BEFORE PRINTING THE RESULT, WE SHOULD FIX THE EXCESSIVE ZEROS, IF IT HAS
         result = aux.num_adjuster(result);
 
+        //RETRIEVING THE RESULT IN A CORRECT BITS CATEGORY: 2^N
+        String resul_bits = aux.n_bits(result);
+
         //FINALLY PRINTING THE RESULT
-        aux.print(result);
+        aux.print("Result: "+ result);
+        aux.print("Result in "+resul_bits.split("\\.")[0].length()+" bits: "+resul_bits);
     }
     void sub (String a, String b){}
     void mult(String a, String b){}
