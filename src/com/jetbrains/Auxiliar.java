@@ -390,7 +390,8 @@ public class Auxiliar extends Operations{
         String operand = mult_str("0",text.length()-1)+"1";
         //print(text);
         text = sum(text,operand);
-        print(text);
+        text = n_bits(text);
+
         return text;
     }
 }

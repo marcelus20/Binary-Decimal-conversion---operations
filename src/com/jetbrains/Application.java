@@ -72,7 +72,30 @@ public class Application extends Auxiliar{
 
         menu();
     }
-    void sub_bin(){}
+    void sub_bin(){
+
+        //FIRST NUMBER:
+        String num1 = number_catcher("Type the first number",
+                "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
+        //SECOND NUMBER:
+        String num2 = number_catcher("Type the first number",
+                "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
+
+        // MAKING BOTH NUMBERS HAVE THE SAME LENGTH
+        num1 = length_settler(num1, num2)[0];
+        num2 = length_settler(num1,num2)[1];
+
+        String result = sub(num1, num2);
+        //GETTING RID OF THE EXCESSIVE ZEROS (IF THERE IS)
+        result = num_adjuster(result);
+        String resul_bits = n_bits(result);
+
+        print("Raw result: "+ result);
+        print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+resul_bits);
+
+
+
+    }
     void mult_bin(){}
     void div_bin(){}
 

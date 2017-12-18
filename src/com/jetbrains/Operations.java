@@ -87,15 +87,20 @@ public class Operations{
         //FINALLY RETURNUNG RESULT
         return result;
     }
-    void sub (String a, String b){
+    String sub (String a, String b){
         Auxiliar aux = new Auxiliar();
+        String result="";
+
+       b = aux.two_comp(b);
 
         a = aux.length_settler(a,b)[0];
         b = aux.length_settler(a,b)[1];
 
-        b = aux.two_comp(b);
-        aux.print(b);
-        aux.print(sum(a,b));
+        result = sum(a,b);
+
+        //aux.print(result);
+
+        return result;
     }
     void mult(String a, String b){}
     void dev (String a, String b){}

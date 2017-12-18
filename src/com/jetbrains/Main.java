@@ -16,9 +16,10 @@ public class Main extends Application{
         //dot_insertion("111111", 3);
         //print(dot_deletion("11.11"));
         //print(n_bits("11111111111111111"));
-        //two_comp("1101");
-
-        sub("11","1");
+        //print(n_bits(two_comp("11010")));
+        //print(sum("10110", "00110"));
+        //sub("10110","11010");
+        sub_bin();
 
     }
 
