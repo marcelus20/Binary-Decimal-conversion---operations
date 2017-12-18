@@ -98,6 +98,21 @@ public class Operations{
 
         result = sum(a,b);
 
+        //GETTING RID OF EXCESSIVE ZEROS
+        result = aux.num_adjuster(result);
+
+        //IF RESULT LENGTH IS GRATER THAN A LENTH, THEN THERE IS A CARRY OVER. THIS FOR WILL GET RID OF IT
+        if(result.length()>a.length()){
+            String[] result_arr = result.split("");
+            String result2 = "";
+
+            for(int i = 1; i<result_arr.length; i++){
+                result2 += result_arr[i];
+            }
+            result2 = aux.num_adjuster(result2);
+            return result2;
+        }
+
         //aux.print(result);
 
         return result;

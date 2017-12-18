@@ -90,6 +90,8 @@ public class Application extends Auxiliar{
         result = num_adjuster(result);
         String resul_bits = n_bits(result);
 
+
+
         print("Raw result: "+ result);
         print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+resul_bits);
 
