@@ -56,17 +56,14 @@ public class Application extends Auxiliar{
         num_1 = length_settler(num_1, num_2)[0];
         num_2 = length_settler(num_1, num_2)[1];
 
-        print("Number 1" + num_1);
-        print("Number 2" + num_2);
-        print("+" + mult_str("_", num_1.length()));
-
         //NOW, FINALLY THE CALCULATOR WILL BE CALLED:
         String result = sum(num_1, num_2);
 
         String resul_bits = n_bits(result);
 
-        print("Raw result: "+ result);
-        print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+resul_bits);
+        calc_structure(num_1, num_2, "+", result);
+        print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+binary_mask(resul_bits));
+        system_pause();
 
 
 

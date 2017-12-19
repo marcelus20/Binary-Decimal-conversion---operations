@@ -278,14 +278,19 @@ public class Auxiliar extends Operations{
 
         }else{//IF CODE REACHES HERE, IT MEANS THAT BOTH ARE INTEGERS
             //CHECKING WHO IS TE BIGGEST STRING;
-            if(a.length()>= b.length()){
+            if(a.length()> b.length()){
                 biggest = a.length();
                 //FILLING B WITH ZEROS USING THE FUNCTION STRING MULTIPLYERS
                 b = mult_str("0", biggest-b.length())+b;
-            }else{
+            }else if(b.length()> a.length()){
                 biggest = b.length();
                 //FILLING A WITH ZEROS IF A IS SMALLER
                 a = mult_str("0", biggest-a.length())+a;
+            }else{
+
+                tuple[0] = a;
+                tuple[1] = b;
+                return tuple;
             }
         }
         tuple[0] = a;
@@ -394,5 +399,36 @@ public class Auxiliar extends Operations{
 
         return text;
     }
+
+    //THIS FUNCTION CHANGES THE REPRESENTATION OF THE BINARY NUMBER.
+    //IT RECEIVES, FOR EXAMPLE: 1101 AND RETURNS 0b1101.
+    String binary_mask(String bin){
+        return "0b"+bin;
+    }
+
+    //THIS METHOD PRINTS THE CALCULATION STRUCTURE:
+    /*
+    * EG:    1101
+    *      +   10
+    *     =======
+    *        1110
+    * */
+    void calc_structure(String a, String b, String operation, String result){
+        String[] tuple = length_settler(a, b);
+        a = "  "+binary_mask(tuple[0]);
+        b = " " + binary_mask(tuple[1]);
+
+        print(a);
+        print(operation + b);
+        print(mult_str("=",a.length()));
+        print(" "+binary_mask(result));
+    }
+
+
+    //THIS METHOD PAUSE THE APPLICATION, THE USER HAS TO PRESS ENTER TO CONTINUE THE CODE
+    void system_pause(){
+        number_catcher("Press enter to continue", "", "");
+    }
+
 }
 

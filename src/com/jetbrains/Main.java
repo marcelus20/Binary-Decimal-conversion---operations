@@ -7,7 +7,7 @@ public class Main extends Application{
         //String[] a = new String[]{"hello", "How are you", "yay"};
         //arr_printer(a);
         //welcome();
-        //menu();
+        menu();
         //add_bin();
         //print(num_adjuster("0001.00000001"));
         //print(is_double("11.0"));
@@ -18,8 +18,7 @@ public class Main extends Application{
         //print(n_bits("11111111111111111"));
         //print(n_bits(two_comp("11010")));
         //print(sum("10110", "00110"));
-        //sub("10110","11010");
-        sub_bin();
+        //calc_structure("111111001","11", "+", "11101");
 
     }
 
