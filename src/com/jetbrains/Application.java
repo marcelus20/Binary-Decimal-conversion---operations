@@ -95,7 +95,24 @@ public class Application extends Auxiliar{
 
 
     }
-    void mult_bin(){}
+    void mult_bin(){
+       String num_1, num_2, result;
+       String[] tuple;
+        num_1 = number_catcher("Type the first number",
+                "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
+        num_2 = number_catcher("Type the first number",
+                "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
+        tuple = length_settler(num_adjuster(num_1), num_adjuster(num_2));
+
+        num_1 = tuple[0];
+        num_2 = tuple[1];
+
+        print(num_1);
+        print(num_2);
+
+        result = mult(num_1, num_2);
+
+    }
     void div_bin(){}
 
 }

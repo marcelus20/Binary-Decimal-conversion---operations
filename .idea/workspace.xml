@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dad6b946-d7a8-4c7b-b701-a5ce58ae8148" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Application.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Main.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="82">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -30,11 +29,13 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
+            <state relative-caret-position="685">
+              <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
               <folding>
                 <element signature="method#welcome#0;class#Application#0" expanded="false" />
                 <element signature="method#menu#0;class#Application#0" expanded="false" />
+                <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+                <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -43,8 +44,8 @@
       <file leaf-file-name="Operations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+            <state relative-caret-position="328">
+              <caret line="122" column="8" lean-forward="true" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
               <folding>
                 <element signature="method#sum#0;class#Operations#0" expanded="false" />
                 <element signature="method#sub#0;class#Operations#0" expanded="false" />
@@ -56,8 +57,8 @@
       <file leaf-file-name="Sys_operations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../math_programming_assignment/src/com/jetbrains/Sys_operations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2911">
-              <caret line="71" column="9" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="273">
+              <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -66,7 +67,7 @@
       <file leaf-file-name="Auxiliar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="135">
               <caret line="423" column="16" lean-forward="false" selection-start-line="423" selection-start-column="16" selection-end-line="423" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -117,10 +118,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/jetbrains/Frame_model.java" />
-        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
-        <option value="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
+        <option value="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
+        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
       </list>
     </option>
   </component>
@@ -263,7 +264,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5808989" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5808989" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -308,6 +309,8 @@
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -370,6 +373,8 @@
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -432,6 +437,8 @@
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -494,6 +501,8 @@
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -583,6 +592,8 @@
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -596,25 +607,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Frame_model.java" />
-    <entry file="file://$PROJECT_DIR$/../math_programming_assignment/src/com/jetbrains/Sys_operations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2911">
-          <caret line="71" column="9" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="82">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="135">
           <caret line="423" column="16" lean-forward="false" selection-start-line="423" selection-start-column="16" selection-end-line="423" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -636,21 +639,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../math_programming_assignment/src/com/jetbrains/Sys_operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="89" selection-end-line="64" selection-end-column="89" />
+        <state relative-caret-position="685">
+          <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        <state relative-caret-position="328">
+          <caret line="122" column="8" lean-forward="true" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />

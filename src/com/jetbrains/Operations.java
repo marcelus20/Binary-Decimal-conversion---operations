@@ -117,7 +117,12 @@ public class Operations{
 
         return result;
     }
-    void mult(String a, String b){}
+    String mult(String a, String b){
+        String result = "";
+
+        
+        return result;
+    }
     void dev (String a, String b){}
 
     //CONVERTIONS
