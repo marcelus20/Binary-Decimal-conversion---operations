@@ -17,31 +17,48 @@ public class Application extends Auxiliar{
                 "[1-"+menu.length+"]", "You should type just numbers between 1 and "+menu.length);
         if (option.equals("1")){
             bin_to_Decimal();
+            menu();
         }else if (option.equals("2")){
             decimal_to_bin();
+            menu();
         }else if (option.equals("3")){
             add_bin();
+            menu();
         }else if (option.equals("4")){
             sub_bin();
+            menu();
         }else if(option.equals("5")){
             mult_bin();
+            menu();
         }else if(option.equals("6")){
             div_bin();
+            menu();
         }else{
             print("THANKS FOR USING THIS CALCULATOR, FAREWELL");
             System.exit(0);
         }
 
     }
-    void bin_to_Decimal(){}
+    void bin_to_Decimal(){
+        String num_1, result;
+
+        num_1 = number_catcher("Insert the binary: ",
+                "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0, double or integers");
+
+        num_1 = num_adjuster(num_1);
+        num_1 = binary_mask(num_1);
+        result = bin_to_dec(num_1);
+        print(num_1 + " = "+result);
+
+        system_pause();
+
+    }
     void decimal_to_bin(){
 
         String num, result, result_int;
 
-
         num = number_catcher("Insert the the decimal number:  ",
                 "[0-9]*\\.?[0-9]*", "You should type numbers between 0 and 9, double or integers");
-
 
         //CARRYING OUT THE CONVERSION, IF NUM HAS DOT IN IT, THEN IT IS DOUBLE. SO USE THE DOUBLE ARGUMENT
         if (is_double(num)){

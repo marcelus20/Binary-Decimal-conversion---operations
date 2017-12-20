@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dad6b946-d7a8-4c7b-b701-a5ce58ae8148" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Application.class" afterPath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Application.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Main.class" afterPath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Operations.class" afterPath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Operations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Application.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Main.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,21 +23,21 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="123">
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+            <state relative-caret-position="688">
+              <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
               <folding>
                 <element signature="method#welcome#0;class#Application#0" expanded="false" />
-                <element signature="method#menu#0;class#Application#0" expanded="false" />
+                <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
                 <element signature="method#add_bin#0;class#Application#0" expanded="false" />
                 <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
                 <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -41,15 +46,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="198" column="8" lean-forward="true" selection-start-line="198" selection-start-column="8" selection-end-line="198" selection-end-column="8" />
+            <state relative-caret-position="327">
+              <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
               <folding>
                 <element signature="method#sum#0;class#Operations#0" expanded="false" />
                 <element signature="method#sub#0;class#Operations#0" expanded="false" />
                 <element signature="method#mult#0;class#Operations#0" expanded="false" />
+                <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
                 <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
                 <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
               </folding>
@@ -60,7 +66,7 @@
       <file leaf-file-name="Auxiliar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-682">
+            <state relative-caret-position="1397">
               <caret line="315" column="36" lean-forward="false" selection-start-line="315" selection-start-column="36" selection-end-line="315" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,9 +116,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/jetbrains/Frame_model.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
-        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
-        <option value="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
+        <option value="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
       </list>
     </option>
   </component>
@@ -255,7 +261,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30107528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.727957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -280,7 +286,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -299,7 +305,7 @@
           <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
             <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -347,6 +353,7 @@
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
             <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
@@ -369,6 +376,7 @@
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
             <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
@@ -413,7 +421,7 @@
           <caret line="109" column="8" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
             <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -435,7 +443,7 @@
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
             <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -451,6 +459,7 @@
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
             <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
@@ -503,7 +512,7 @@
           <caret line="68" column="73" lean-forward="false" selection-start-line="68" selection-start-column="73" selection-end-line="68" selection-end-column="73" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
             <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -551,6 +560,7 @@
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
             <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
@@ -571,7 +581,7 @@
           <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
             <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -619,6 +629,7 @@
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
             <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
@@ -639,7 +650,7 @@
           <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
             <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -655,6 +666,7 @@
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
             <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
@@ -697,6 +709,7 @@
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
             <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
             <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
@@ -729,7 +742,7 @@
           <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
             <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
@@ -774,23 +787,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="198" column="8" lean-forward="true" selection-start-line="198" selection-start-column="8" selection-end-line="198" selection-end-column="8" />
-          <folding>
-            <element signature="method#sum#0;class#Operations#0" expanded="false" />
-            <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <element signature="method#mult#0;class#Operations#0" expanded="false" />
-            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
-            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-682">
+        <state relative-caret-position="1397">
           <caret line="315" column="36" lean-forward="false" selection-start-line="315" selection-start-column="36" selection-end-line="315" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -808,24 +807,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="123">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+        <state relative-caret-position="327">
+          <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
           <folding>
-            <element signature="method#welcome#0;class#Application#0" expanded="false" />
-            <element signature="method#menu#0;class#Application#0" expanded="false" />
-            <element signature="method#add_bin#0;class#Application#0" expanded="false" />
-            <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
-            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#sum#0;class#Operations#0" expanded="false" />
+            <element signature="method#sub#0;class#Operations#0" expanded="false" />
+            <element signature="method#mult#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>

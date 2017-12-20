@@ -6,11 +6,12 @@ public class Main extends Application{
         //print(number_catcher("", "", ""));
         //String[] a = new String[]{"hello", "How are you", "yay"};
         //arr_printer(a);
-        //welcome();
-        //menu();
+        welcome();
+        menu();
         //mult_bin();
         //add_bin();
-        decimal_to_bin();
+        //decimal_to_bin();
+        //bin_to_dec("101110.111");
         //print(num_adjuster("0001.00000001"));
         //print(is_double("11.0"));
         //length_settler("100","10.101010");

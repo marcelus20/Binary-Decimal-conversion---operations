@@ -165,7 +165,84 @@ public class Operations{
     void dev (String a, String b){}
 
     //CONVERTIONS
-    void bin_to_dec(String number){}
+
+    /*
+    * THE BIN_TO_DEC METHOD WILL CHECK IF THE BINARY HAS A BINARY POINT, IF SO, THEN IT WILL TREAT THE CALCULATION
+    * SEPERATELY.
+    * FOR THE INT PART, IT WILL GO THROUGH THE STRING AND CHECK THE 1'S AND ITS INDEX AND COME TO A RESULT
+    * FOR DOUBLE PART, IT WILL SPLIT INT AND DOUBLE, CALCULATES INT, CALCULATE DOUBLE AND THEN JOIN THEM TOGETHER
+    * */
+    String bin_to_dec(String number){
+        Auxiliar aux = new Auxiliar();
+
+        //ARRAYS THAT WILL BE ON THE FOR LOOP
+        String[] numb_arr, point_arr;
+        //THE 1'S INDEXES AND THE RESULT, BOTH ARE INT
+        int index, result;
+        result = 0;
+        index = 0;
+
+        //HERE IT WILL BE CHECK WHETHER OR NOT THE NUMBER IS DOUBLE.
+        if(!aux.is_double(number)){//IF NOT DOUBLE
+
+            //THE INTEGER NUMBER STRING WILL BE TURNED INTO AN ARAY
+            numb_arr = number.split("");
+
+            /*THE CALCULATION GOES IN HERE, THIS FOR CHECKS IF THE ELEMENT IN THE STRING IS 1, IF SO,
+            *IT WILL SUM THE PREVIOUS VALUE OF RESULT WITH THE 2^INDEX UNTIL THE STRING IS FINISHED.
+            *EVERY LOOP STEP, THE INDEX INCREMENTS IN ONE.
+            */
+            for (int i = numb_arr.length-1; i>=0; i--){
+                if(numb_arr[i].equals("1")){
+                    result += (int)Math.pow(2,index);
+                }
+                index++;
+            }
+            // LAST, RETURN THE VALUE
+            return String.valueOf(result);
+        }else{//IF DOUBLE
+            //THIS VARIABLE REPRESENTS DOUBLE PART INITIALIZING WITH 0.
+            double dec_result;
+            dec_result = 0;
+
+            //IT WILL BE MADE AN INT PART AND DOUBLE PART, THEY WILL BE TREATED SEPARETEDLY
+            String int_part;
+            String doub_part;
+
+            //THIS TUPLE WILL STORE BOTH PARTS. INT PART AND DOUBLE PART INTO AN ARRAY. THIS WAY HELPS LATER ON
+            //FOR ASSIGNING THE INT PART AND DOUB_PART BASED ON THE TUPLE
+            String[] tuple;
+
+            //ASSIGNING VALUES TO THE VARIABLES
+            index = -1;
+            tuple = number.split("\\.");
+            int_part = tuple[0];
+            doub_part = tuple[1];
+
+            point_arr = doub_part.split("");
+
+            //AS THE INTEGER PART IS READY, WE JUST NEED TO CALL THIS SAME FUNCTION RECURSIVELY
+            //AND STORE THE RESULT INTO THIS VARIABLE
+            result = Integer.parseInt(bin_to_dec(int_part));
+
+            //DEALING WITH FLOAT POINT
+            /*
+            * SAME WITH THE INTEGER PART, BUT INSTEAD OF GOING BACKWORDS, IT GOES FORWARD AND THE INDEXES
+            * DECREASE.
+            * */
+            for (int i = 0; i<point_arr.length; i++){
+                if(point_arr[i].equals("1")){
+                    dec_result += Math.pow(2,index);
+                }
+                index--;
+            }
+            //JOINING THEM TOGETHER
+            return String.valueOf(result+dec_result);
+        }
+
+
+    }
+
 
     /*
     * FOR CARRYING OUT THE DECIMAL TO BINARY CONVERTION, IT HAS BEEN USED THE OVERLOAD CONCEPTION.
