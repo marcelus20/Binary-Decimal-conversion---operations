@@ -20,6 +20,7 @@ public class Main extends Application{
         //print(n_bits(two_comp("11010")));
         //print(sum("10110", "00110"));
         //calc_structure("111111001","11", "+", "11101");
+        print(places_after_dot("11.1"));
 
     }
 

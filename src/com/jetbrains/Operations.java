@@ -10,8 +10,12 @@ public class Operations{
         int dot_index = aux.places_after_dot(a);
 
 
-        String[] arr_a;
-        String[] arr_b;
+        String[] arr_a,arr_b, tuple;
+        tuple = aux.length_settler(a,b);
+        a = tuple[0];
+        b = tuple[1];
+
+
 
         /*
         * IF A IS DOUBLE, THEN B IS. BECAUSE THE PARAMETERS ARE EXTERNALLY FIXED BEFORE THIS METHOD IS FIRED.
@@ -118,10 +122,45 @@ public class Operations{
         return result;
     }
     String mult(String a, String b){
-        String result = "";
+        Auxiliar aux = new Auxiliar();
+        String result, result_;
+        int dot_index = 0;
+        boolean is_double = false;
+        String[] arr_a, arr_b;
+        arr_a = a.split("");
+        arr_b = b.split("");
 
-        
+        if (aux.is_double(a)||aux.is_double(b)){
+            is_double = true;
+            a = aux.dot_deletion(a);
+            b = aux.dot_deletion(b);
+            dot_index = -(aux.places_after_dot(a)+aux.places_after_dot(b));
+            //aux.print(dot_index);
+        }
+
+        result = "0";
+        result_ = "";
+
+        int count = 0;
+        for (int i = arr_a.length-1; i>=0; i--){
+            if(arr_b[i].equals("1")){
+                result_ = a+aux.mult_str("0", count);
+                result = sum(result, result_);
+
+                count++;
+            }else{
+                result_ = "0"+aux.mult_str("0", count);
+                result = sum(result, result_);
+                count++;
+            }
+        }
+
+        if(is_double){
+            result = aux.dot_insertion(result, dot_index);
+            return result;
+        }
         return result;
+
     }
     void dev (String a, String b){}
 

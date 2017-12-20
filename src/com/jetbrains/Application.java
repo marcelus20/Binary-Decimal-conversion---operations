@@ -96,7 +96,7 @@ public class Application extends Auxiliar{
 
     }
     void mult_bin(){
-       String num_1, num_2, result;
+       String num_1, num_2, result, resul_bits;
        String[] tuple;
         num_1 = number_catcher("Type the first number",
                 "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
@@ -107,11 +107,12 @@ public class Application extends Auxiliar{
         num_1 = tuple[0];
         num_2 = tuple[1];
 
-        print(num_1);
-        print(num_2);
-
         result = mult(num_1, num_2);
+        resul_bits = n_bits(result);
 
+
+        calc_structure(num_1,num_2,"*", result);
+        print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+binary_mask(resul_bits));
     }
     void div_bin(){}
 

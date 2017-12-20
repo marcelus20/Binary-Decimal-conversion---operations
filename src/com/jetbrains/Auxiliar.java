@@ -323,6 +323,7 @@ public class Auxiliar extends Operations{
             }
         }
         //print(d_places);
+        //print(d_places-1);
         return d_places-1;
     }
 
