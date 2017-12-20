@@ -166,6 +166,9 @@ public class Operations{
 
     //CONVERTIONS
     void bin_to_dec(String number){}
-    void dec_to_bin(String number){}
+    String dec_to_bin(int number){
+
+        
+    }
 
 }
