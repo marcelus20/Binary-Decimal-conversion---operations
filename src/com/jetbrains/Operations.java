@@ -166,8 +166,73 @@ public class Operations{
 
     //CONVERTIONS
     void bin_to_dec(String number){}
+
+    /*
+    * FOR CARRYING OUT THE DECIMAL TO BINARY CONVERTION, IT HAS BEEN USED THE OVERLOAD CONCEPTION.
+    * AS THE PARAMETER CAN BE EITHER INT OR DOUBLE, I CREATED TWO FUNCTION WITH THE SAME NAME (OVERLOADING)
+    * AND FIRST ONE WILL RECEIVE ONLY INT ARGUMENT. IF THERE IS A DOUBLE ARGUMENT IT WILL GO TO THE SECOND.
+    * */
     String dec_to_bin(int number){
-        return null;
+        Auxiliar aux = new Auxiliar();
+
+        String result = "";
+
+        /*
+        * THIS LOOP CARRIES OUT THE CONVERTION.
+        * IT FILLS THE VARIABLE RESULT EVERY STEP OF THE LOOP WITH A VALUE 0 OR 1, WHICH IS THE
+        * MODULE OF THE NUMBER%2. EVERY LOOP STEP THE NUMBER IS DIMINISHED BY HALF UNTIL IT REACHES 0, WHEN THE
+        * LOOP IS BROKEN
+        * */
+        while (number != 0){
+            result += number%2;
+            number = number/2;
+        }
+        //AFTER RESULT IS PROCESSED BY LOOP, WE SHOULD INVERT THE STRING INDEXES
+        result = aux.inverter(result);
+        //IF THERE IS ANY EXCESSIVE 0'S WE GET RID OF THEM BY USIN THE NUM_ADJUSTER METHOD
+        result = aux.num_adjuster(result);
+        //AT LAST, WE RETURN THE RESULT;
+        return result;
+    }
+    /*
+    * THIS IS THE DECIMAL TO BINARY CONVERTER THAT DEALS WITH THE DOUBLE DECIMAL ARGUMENT.
+    * */
+    String dec_to_bin(double number){
+        Auxiliar aux = new Auxiliar();
+        int int_part;
+        String int_result, result;
+        double doub_part;
+        //RETRIEVING JUST THE INTEGER PART AND GETTING ITS CORRESPONDENT BINARY VALUE BY USING THE METHOD ABOVE
+        int_part = (int)number;
+        int_result = dec_to_bin(int_part);
+
+        //INITIALIZING RESULT WITH AN EMPTY STRING FOR FILLING WITH VALUES LATER ON THE LOOP;
+        result = "";
+
+        //INITIALIZING DOUBLE PART WITH A VALUE SMALLER THAN 1, SO NUMBER - INTEGER PART OF THIS NUMBER
+        doub_part = number-int_part;
+
+        /*
+        * LOOPING FOR FILLING THE RESULT.
+        *THE LOOP BREAKS AT DOUB_PART EQUALS TO 1
+        * IT MAKES DOUB_PART TIMES 2 AND RETRIEVE JUST THE INTEGER PART AND FILL THE RESULT WITH THIS INTEGER PART
+        * WHEN THE LENGTH OF RESULT IS 6, THEN WE MAKE DOUB_PART =1, THEREFORE THE LOOP BREAKS
+        * */
+        while(doub_part != 1){
+            doub_part = doub_part*2;
+            if(doub_part>1){
+                result += (int)doub_part;
+                doub_part = doub_part-1;
+            }else{
+                result += (int)doub_part;
+            }
+            if(result.length()>6){
+                doub_part = 1;
+            }
+        }
+
+        //AT LAST WE JOIN ALL STRINGS, THE INT RESULT, THE DOT AND THE DOUBLE RESULT;
+        return int_result+"."+result;
     }
 
 }

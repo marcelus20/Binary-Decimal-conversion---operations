@@ -8,7 +8,7 @@ public class Main extends Application{
         //arr_printer(a);
         //welcome();
         //menu();
-        mult_bin();
+        //mult_bin();
         //add_bin();
         //print(num_adjuster("0001.00000001"));
         //print(is_double("11.0"));
@@ -20,8 +20,8 @@ public class Main extends Application{
         //print(n_bits(two_comp("11010")));
         //print(sum("10110", "00110"));
         //calc_structure("111111001","11", "+", "11101");
-        print(places_after_dot("11.1"));
-
+        //print(places_after_dot("11.1"));
+        print(dec_to_bin(100.5));
     }
 
     public static void main(String[] args) {

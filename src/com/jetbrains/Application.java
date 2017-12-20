@@ -36,13 +36,19 @@ public class Application extends Auxiliar{
     void bin_to_Decimal(){}
     void decimal_to_bin(){
 
-        String num_1, num_2, result;
+        String num, result;
 
-        num_1 = number_catcher("Insert the the decimal number:  ",
+
+        num = number_catcher("Insert the the decimal number:  ",
                 "[0-9]*\\.?[0-9]*", "You should type numbers between 0 and 9, double or integers");
 
+
+
         //CARRYING OUT THE CONVERSION
-        result = dec_to_bin(num_1);
+        result = dec_to_bin(12);
+
+        result = num_adjuster(result);
+        print(result);
 
 
 
