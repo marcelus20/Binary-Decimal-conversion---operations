@@ -167,8 +167,7 @@ public class Operations{
     //CONVERTIONS
     void bin_to_dec(String number){}
     String dec_to_bin(int number){
-
-        
+        return null;
     }
 
 }
