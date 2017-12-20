@@ -10,6 +10,7 @@ public class Main extends Application{
         //menu();
         //mult_bin();
         //add_bin();
+        decimal_to_bin();
         //print(num_adjuster("0001.00000001"));
         //print(is_double("11.0"));
         //length_settler("100","10.101010");
@@ -21,7 +22,7 @@ public class Main extends Application{
         //print(sum("10110", "00110"));
         //calc_structure("111111001","11", "+", "11101");
         //print(places_after_dot("11.1"));
-        print(dec_to_bin(100.5));
+        //print(dec_to_bin(100.5));
     }
 
     public static void main(String[] args) {

@@ -36,21 +36,31 @@ public class Application extends Auxiliar{
     void bin_to_Decimal(){}
     void decimal_to_bin(){
 
-        String num, result;
+        String num, result, result_int;
 
 
         num = number_catcher("Insert the the decimal number:  ",
                 "[0-9]*\\.?[0-9]*", "You should type numbers between 0 and 9, double or integers");
 
 
+        //CARRYING OUT THE CONVERSION, IF NUM HAS DOT IN IT, THEN IT IS DOUBLE. SO USE THE DOUBLE ARGUMENT
+        if (is_double(num)){
+            result = dec_to_bin(Double.parseDouble(num));
+        }else{
+            result = dec_to_bin(Integer.parseInt(num));
+        }
 
-        //CARRYING OUT THE CONVERSION
-        result = dec_to_bin(12);
+
+
 
         result = num_adjuster(result);
-        print(result);
+        result_int = n_bits(result);
+        result = binary_mask(result);
 
+        print(num+ " = " + result);
+        print("Answer in "+ result_int.split("\\.")[0].length() + " bits "+result_int);
 
+        system_pause();
 
 
     }
