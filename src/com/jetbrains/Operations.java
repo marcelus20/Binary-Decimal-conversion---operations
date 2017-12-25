@@ -127,8 +127,6 @@ public class Operations{
         int dot_index = 0;
         boolean is_double = false;
         String[] arr_a, arr_b;
-        arr_a = a.split("");
-        arr_b = b.split("");
 
         if (aux.is_double(a)||aux.is_double(b)){
             is_double = true;
@@ -139,6 +137,9 @@ public class Operations{
             //aux.print(dot_index);
         }
 
+        arr_a = a.split("");
+        arr_b = b.split("");
+
         result = "0";
         result_ = "";
 
@@ -147,13 +148,11 @@ public class Operations{
             if(arr_b[i].equals("1")){
                 result_ = a+aux.mult_str("0", count);
                 result = sum(result, result_);
+                aux.print("res" + result);
 
-                count++;
-            }else{
-                result_ = "0"+aux.mult_str("0", count);
-                result = sum(result, result_);
-                count++;
+
             }
+            count++;
         }
 
         if(is_double){

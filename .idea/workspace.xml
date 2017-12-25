@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dad6b946-d7a8-4c7b-b701-a5ce58ae8148" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Operations.class" afterPath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Operations.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Application.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Main.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,11 +19,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="288">
+              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
               <folding>
-                <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-                <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+                <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+                <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -32,29 +32,16 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="150" column="71" lean-forward="false" selection-start-line="150" selection-start-column="71" selection-end-line="150" selection-end-column="71" />
+            <state relative-caret-position="297">
+              <caret line="117" column="18" lean-forward="false" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
               <folding>
                 <element signature="method#welcome#0;class#Application#0" expanded="false" />
+                <element signature="method#menu#0;class#Application#0" expanded="false" />
+                <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
                 <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
                 <element signature="method#add_bin#0;class#Application#0" expanded="false" />
                 <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="134" column="71" lean-forward="false" selection-start-line="134" selection-start-column="71" selection-end-line="134" selection-end-column="71" />
-              <folding>
-                <element signature="method#sum#0;class#Operations#0" expanded="false" />
-                <element signature="method#sub#0;class#Operations#0" expanded="false" />
-                <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-                <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-                <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+                <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -63,8 +50,8 @@
       <file leaf-file-name="Auxiliar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="319" column="10" lean-forward="false" selection-start-line="319" selection-start-column="10" selection-end-line="319" selection-end-column="10" />
+            <state relative-caret-position="-246">
+              <caret line="331" column="14" lean-forward="false" selection-start-line="331" selection-start-column="11" selection-end-line="331" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#number_catcher#0;class#Auxiliar#0" expanded="false" />
@@ -74,14 +61,29 @@
                 <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-                <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-                <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-                <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+                <element signature="e#12430#12431#0" expanded="true" />
+                <element signature="e#12472#12473#0" expanded="true" />
                 <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
                 <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
                 <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
                 <marker date="1514163330733" expanded="false" signature="14862:14872" ph=" { " />
                 <marker date="1514163330733" expanded="false" signature="14922:14928" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <element signature="method#sum#0;class#Operations#0" expanded="false" />
+                <element signature="method#sub#0;class#Operations#0" expanded="false" />
+                <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+                <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+                <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,6 +106,7 @@
       <find>dot_ins</find>
       <find>places_a</find>
       <find>places</find>
+      <find>dot</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,9 +122,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/jetbrains/Frame_model.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
-        <option value="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
+        <option value="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
       </list>
     </option>
   </component>
@@ -254,6 +257,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -263,7 +267,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44408602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44408602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -308,6 +312,9 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -318,8 +325,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -352,9 +359,12 @@
           <caret line="150" column="71" lean-forward="false" selection-start-line="150" selection-start-column="71" selection-end-line="150" selection-end-column="71" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -364,8 +374,8 @@
         <state relative-caret-position="453">
           <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -383,9 +393,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -402,9 +411,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -414,8 +423,8 @@
         <state relative-caret-position="726">
           <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -426,9 +435,12 @@
           <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -453,9 +465,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -472,9 +483,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -484,8 +495,8 @@
         <state relative-caret-position="726">
           <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -497,9 +508,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -524,9 +535,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -542,9 +552,12 @@
           <caret line="109" column="8" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -554,8 +567,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -566,9 +579,12 @@
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,9 +596,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -607,9 +623,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -624,8 +639,8 @@
         <state relative-caret-position="820">
           <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -636,9 +651,12 @@
           <caret line="68" column="73" lean-forward="false" selection-start-line="68" selection-start-column="73" selection-end-line="68" selection-end-column="73" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,9 +681,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -682,9 +699,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -694,8 +711,8 @@
         <state relative-caret-position="369">
           <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -706,9 +723,12 @@
           <caret line="63" column="26" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,9 +753,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -752,9 +771,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -764,8 +783,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -776,9 +795,12 @@
           <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -790,9 +812,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -810,9 +832,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -827,8 +848,8 @@
         <state relative-caret-position="369">
           <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -840,9 +861,9 @@
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -860,9 +881,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -878,9 +898,12 @@
           <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -890,8 +913,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -918,10 +941,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <marker date="1514164015438" expanded="false" signature="905:913" ph=" { " />
+            <marker date="1514164015438" expanded="false" signature="924:930" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="319" column="10" lean-forward="false" selection-start-line="319" selection-start-column="10" selection-end-line="319" selection-end-column="10" />
+        <state relative-caret-position="-246">
+          <caret line="331" column="14" lean-forward="false" selection-start-line="331" selection-start-column="11" selection-end-line="331" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#number_catcher#0;class#Auxiliar#0" expanded="false" />
@@ -931,9 +965,8 @@
             <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
-            <marker date="1514163330733" expanded="false" signature="12068:12339" ph="{...}" />
-            <marker date="1514163330733" expanded="false" signature="12430:12440" ph=" { " />
-            <marker date="1514163330733" expanded="false" signature="12467:12473" ph=" }" />
+            <element signature="e#12430#12431#0" expanded="true" />
+            <element signature="e#12472#12473#0" expanded="true" />
             <marker date="1514163330733" expanded="false" signature="13637:14069" ph="{...}" />
             <marker date="1514163330733" expanded="false" signature="14231:14241" ph=" { " />
             <marker date="1514163330733" expanded="false" signature="14257:14263" ph=" }" />
@@ -945,38 +978,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="134" column="71" lean-forward="false" selection-start-line="134" selection-start-column="71" selection-end-line="134" selection-end-column="71" />
+        <state relative-caret-position="139">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="method#sum#0;class#Operations#0" expanded="false" />
             <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <marker date="1514163384458" expanded="false" signature="5225:7756" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="8123:8924" ph="{...}" />
-            <marker date="1514163384458" expanded="false" signature="9068:10439" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <marker date="1514163330749" expanded="false" signature="903:911" ph=" { " />
-            <marker date="1514163330749" expanded="false" signature="922:928" ph=" }" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="150" column="71" lean-forward="false" selection-start-line="150" selection-start-column="71" selection-end-line="150" selection-end-column="71" />
+        <state relative-caret-position="297">
+          <caret line="117" column="18" lean-forward="false" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
+            <element signature="method#menu#0;class#Application#0" expanded="false" />
+            <element signature="method#bin_to_Decimal#0;class#Application#0" expanded="false" />
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>

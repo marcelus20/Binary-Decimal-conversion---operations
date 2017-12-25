@@ -6,9 +6,9 @@ public class Main extends Application{
         //print(number_catcher("", "", ""));
         //String[] a = new String[]{"hello", "How are you", "yay"};
         //arr_printer(a);
-        welcome();
-        menu();
-        //mult_bin();
+        //welcome();
+        //menu();
+        mult_bin();
         //add_bin();
         //decimal_to_bin();
         //bin_to_dec("101110.111");

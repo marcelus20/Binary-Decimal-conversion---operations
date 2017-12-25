@@ -137,6 +137,7 @@ public class Application extends Auxiliar{
 
         print("Raw result: "+ result);
         print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+resul_bits);
+        system_pause();
 
 
 
@@ -153,12 +154,13 @@ public class Application extends Auxiliar{
         num_1 = tuple[0];
         num_2 = tuple[1];
 
-        result = mult(num_1, num_2);
+        result = num_adjuster(mult(num_1, num_2));
         resul_bits = n_bits(result);
 
 
         calc_structure(num_1,num_2,"*", result);
         print("Result in " + resul_bits.split("\\.")[0].length() + " bits: "+binary_mask(resul_bits));
+        system_pause();
     }
     void div_bin(){}
 
