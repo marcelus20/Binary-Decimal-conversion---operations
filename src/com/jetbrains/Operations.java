@@ -132,9 +132,10 @@ public class Operations{
 
         if (aux.is_double(a)||aux.is_double(b)){
             is_double = true;
+            dot_index = aux.places_after_dot(a)+aux.places_after_dot(b);
             a = aux.dot_deletion(a);
             b = aux.dot_deletion(b);
-            dot_index = -(aux.places_after_dot(a)+aux.places_after_dot(b));
+
             //aux.print(dot_index);
         }
 
