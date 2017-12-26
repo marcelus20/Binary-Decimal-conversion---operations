@@ -8,7 +8,7 @@ public class Main extends Application{
         //arr_printer(a);
         //welcome();
         //menu();
-        mult_bin();
+        //mult_bin();
         //add_bin();
         //decimal_to_bin();
         //bin_to_dec("101110.111");
@@ -24,6 +24,9 @@ public class Main extends Application{
         //calc_structure("111111001","11", "+", "11101");
         //print(places_after_dot("11.1"));
         //print(dec_to_bin(100.5));
+        print(sub("101","1010"));
+        print(two_comp("1010"));
+        print(sum("101", "110"));
     }
 
     public static void main(String[] args) {

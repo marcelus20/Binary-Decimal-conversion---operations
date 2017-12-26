@@ -162,7 +162,22 @@ public class Operations{
         return result;
 
     }
-    void dev (String a, String b){}
+    String dev (String a, String b){
+        //IT WILL FIRSTLY CHECK IF BOTH STRINGS ARE EQUALS, IF SO, THEN THE RESULT WILL BE ONE
+        if (a.equals(b)){
+            return "1";
+        }else{
+            if(b.length()> a.length()){
+                //IF B LENGTH IS GRATER THEN A
+            }else{
+                //IF A LENGTH IS GRATER THEN B
+                
+            }
+        }
+
+
+        return "";
+    }
 
     //CONVERTIONS
 
