@@ -432,7 +432,7 @@ public class Auxiliar extends Operations{
     }
 
 
-    //THIS METHOD CHOSES THE RANGE OF AN ARRAY OR STRING YOU WANT TO MAKE USE OF.
+    //THIS METHOD CHOOSES THE RANGE OF AN ARRAY OR STRING YOU WANT TO MAKE USE OF.
     //IF YOU CAST range_ar("Hello", 0, 2), the return will be "Hel"
     String range_ar(String element, int start, int stop){
         String new_string = "";
@@ -450,6 +450,38 @@ public class Auxiliar extends Operations{
 
 
         return new_string;
+    }
+
+
+    //THIS METHOD COMPARES HICH BINARY IS GRATER THAN ANOTHER BASED ON THE VALUE THAT THE STRINGS REPRESENTS
+    String whosgrater(String binary1, String binary2){
+        String grater = "";
+
+        //GETTING RID OF THE EXCESSIVE ZEROS
+        binary1 = num_adjuster(binary1);
+        binary2 = num_adjuster(binary2);
+
+        if (binary1.length()>binary2.length()){
+            grater = binary1;
+        }else if (binary2.length()>binary1.length()){
+            grater = binary2;
+        }else{
+            //IF THEY ARE EQUAL LENGTH, THEN CHECK THE VALUE THAT THEY REPRESENT
+            for(int i = 0; i<binary1.length(); i++){
+                if (binary1.charAt(i) == binary2.charAt(i)){
+                    grater = "";
+                }else{
+                    if (String.valueOf(binary1.charAt(i)).equals("1")){
+                        grater = binary1;
+                    }else{
+                        grater = binary2;
+                    }
+                }
+            }
+        }
+
+
+        return grater;
     }
 
 }
