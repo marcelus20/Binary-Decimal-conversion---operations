@@ -461,6 +461,11 @@ public class Auxiliar extends Operations{
         binary1 = num_adjuster(binary1);
         binary2 = num_adjuster(binary2);
 
+        if(binary1.equals(binary2)){
+            grater = binary1;
+            return grater;
+        }
+
         if (binary1.length()>binary2.length()){
             grater = binary1;
         }else if (binary2.length()>binary1.length()){

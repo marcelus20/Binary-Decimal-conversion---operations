@@ -28,7 +28,8 @@ public class Main extends Application{
         //print(two_comp("1010"));
         //print(sum("101", "110"));
         //print(range_ar("azul",20,3));
-        print(whosgrater("101","100"));
+        //print(whosgrater("101","100"));
+        print(div("111110", "10"));
     }
 
     public static void main(String[] args) {
