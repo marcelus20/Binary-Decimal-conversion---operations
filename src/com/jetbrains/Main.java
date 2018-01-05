@@ -24,9 +24,10 @@ public class Main extends Application{
         //calc_structure("111111001","11", "+", "11101");
         //print(places_after_dot("11.1"));
         //print(dec_to_bin(100.5));
-        print(sub("101","1010"));
-        print(two_comp("1010"));
-        print(sum("101", "110"));
+        //print(sub("101","1010"));
+        //print(two_comp("1010"));
+        //print(sum("101", "110"));
+        //print(range_ar("azul",20,3));
     }
 
     public static void main(String[] args) {

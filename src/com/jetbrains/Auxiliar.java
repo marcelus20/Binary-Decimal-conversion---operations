@@ -431,5 +431,26 @@ public class Auxiliar extends Operations{
         number_catcher("Press enter to continue", "", "");
     }
 
+
+    //THIS METHOD CHOSES THE RANGE OF AN ARRAY OR STRING YOU WANT TO MAKE USE OF.
+    //IF YOU CAST range_ar("Hello", 0, 2), the return will be "Hel"
+    String range_ar(String element, int start, int stop){
+        String new_string = "";
+        if(stop > element.length()){
+            stop = element.length();
+        }
+        if (start > stop){
+            print("Start point can't be grater than stop");
+            return element;
+        }
+        String [] element_arr = element.split("");
+        for (int i =start; i< stop; i++){
+             new_string += element_arr[i];
+        }
+
+
+        return new_string;
+    }
+
 }
 
