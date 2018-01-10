@@ -510,6 +510,9 @@ public class Auxiliar extends Operations{
             if(operand_1.equals("1") && borrow.equals("1")){
                 operand_1 = "0";
                 borrow = "0";
+            }else if(operand_1.equals("0") && borrow.equals("1")){
+                operand_1 = "1";
+                borrow = "0";
             }
 
             if(operand_1.equals("1") && operand_2.equals("1")){
