@@ -507,38 +507,32 @@ public class Auxiliar extends Operations{
             String operand_1 = String.valueOf(div_slice.charAt(i));
             String operand_2 = String.valueOf(factor.charAt(i));
 
-            if(operand_1.equals("1") && borrow.equals("1")){
-                operand_1 = "0";
-                borrow = "0";
-            }else if(operand_1.equals("0") && borrow.equals("1")){
-                operand_1 = "1";
-                borrow = "0";
+            if (!borrow.equals("0")){
+                if(operand_1.equals("0")){
+                    operand_1 = "1";
+                    borrow = "1";
+                }else{
+                    operand_1 = "0";
+                    borrow = "0";
+                }
             }
-
-            if(operand_1.equals("1") && operand_2.equals("1")){
-
+            if(operand_1.equals("0") && operand_2.equals("0")){
                 result += "0";
             }else if(operand_1.equals("1") && operand_2.equals("0")){
                 result += "1";
-            }else if (operand_1.equals("0") && operand_2.equals("0")){
-                if (borrow.equals("1")){
-                    operand_1 = "1";
-                }
+            }else if(operand_1.equals("0") && operand_2.equals("1")){
+                result += "1";
+                borrow = "1";
+            }else if(operand_1.equals("1") && operand_2.equals("1")){
                 result += "0";
-            }else{
-                //HERE IS WHERE OPERAND_1 IS ZERO AND OPERAND_2 IS ONE. SO BORROW COMES INTO PLAY
-                if (borrow.equals("1")){
-                    result+="0";
-                    //borrow = "0";
-                }else{
-                    result +="1";
-                    borrow = "1";
-                }
-
-
             }
+            //print("Borrow: "+borrow);
+            //print("operand: " + operand_1);
+            //print("result: " + result);
+            //system_pause();
         }
-        //print(borrow);
+
+
         result = num_adjuster(inverter(result));
 
         return result;

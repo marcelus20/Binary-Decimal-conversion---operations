@@ -30,7 +30,7 @@ public class Main extends Application{
         //print(range_ar("azul",20,3));
         //print(dividend_is_greater("1100001011","1011111000"));
         //print(div("10100", "10"));
-        print(div_subtraction("1000","10"));
+        //print(div_subtraction("100000000","111111"));
     }
 
     public static void main(String[] args) {
