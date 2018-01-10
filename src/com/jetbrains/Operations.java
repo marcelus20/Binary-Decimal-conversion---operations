@@ -173,26 +173,33 @@ public class Operations{
         //IT WILL FIRSTLY CHECK IF BOTH STRINGS ARE EQUALS, IF SO, THEN THE RESULT WILL BE ONE
         if (dividend.equals(divisor)){
             return "1";
-        }else{
+        }else if(aux.dividend_is_greater(dividend, divisor)){
             String result = "";
-            String div_slice;
+            String div_slice= "";
             int start = 0;
 
             for(int i = 0; i<dividend.length(); i++){
-                div_slice = aux.range_ar(dividend, start, i+1);
+                div_slice += aux.range_ar(dividend, start, i+1);
                 if(aux.dividend_is_greater(div_slice, divisor)){
                     result +="1";
+                    div_slice = aux.div_subtraction(div_slice, divisor);
+                    start++;
+                    //aux.system_pause();
                 }else{
                     result +="0";
+                    div_slice = aux.div_subtraction(div_slice, "0");
+                    start++;
+                    //aux.system_pause();
                 }
-                aux.print(result);
+                //aux.print(div_slice);
             }
 
-            return result;
+            return  aux.num_adjuster(result);
 
+        }else{
+
+            return "";
         }
-
-
     }
 
     //CONVERTIONS

@@ -461,28 +461,28 @@ public class Auxiliar extends Operations{
         dividend = num_adjuster(dividend);
         divisor = num_adjuster(divisor);
 
+        //PADDING THEM:
+        String[] tuple = padding_binarries(dividend, divisor);
+        dividend = tuple[0];
+        divisor = tuple[1];
+
         if(dividend.equals(divisor)){
             return true;
         }
 
-        if (dividend.length()>divisor.length()){
-            return true;
-        }else if (divisor.length()>dividend.length()){
-            return false;
-        }else{
-            //IF THEY ARE EQUAL LENGTH, THEN CHECK THE VALUE THAT THEY REPRESENT
-            for(int i = 0; i<dividend.length(); i++){
-                if (dividend.charAt(i) == divisor.charAt(i)){
-                    continue;
+        //IF THEY ARE EQUAL LENGTH, THEN CHECK THE VALUE THAT THEY REPRESENT
+        for(int i = 0; i<dividend.length(); i++){
+            if (dividend.charAt(i) == divisor.charAt(i)){
+                continue;
+            }else{
+                if (String.valueOf(dividend.charAt(i)).equals("1")){
+                    return true;
                 }else{
-                    if (String.valueOf(dividend.charAt(i)).equals("1")){
-                        return true;
-                    }else{
-                        return false;
-                    }
+                    return false;
                 }
             }
         }
+
         return false;
     }
 
