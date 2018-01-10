@@ -175,17 +175,6 @@ public class Operations{
             return "1";
         }else{
             String result = "";
-            int len_divisor = divisor.length();
-            String dividend_slice = aux.range_ar(dividend, 0, len_divisor);
-
-            //CHECKING WHO IS GRATER, WHETHER THIS IS THE DIV_SLICE OR THE DIVISOR
-            String grater = aux.whosgrater(dividend_slice, divisor);
-            if (dividend_slice.equals(grater)){
-                result +="1";
-            }else{
-                result +="0";
-                return result;
-            }
             return result;
 
         }

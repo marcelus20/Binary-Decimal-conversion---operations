@@ -453,40 +453,37 @@ public class Auxiliar extends Operations{
     }
 
 
-    //THIS METHOD COMPARES HICH BINARY IS GRATER THAN ANOTHER BASED ON THE VALUE THAT THE STRINGS REPRESENTS
-    String whosgrater(String binary1, String binary2){
+    //THIS METHOD COMPARES WHICH BINARY IS GRATER THAN ANOTHER BASED ON THE VALUE THAT THE STRINGS REPRESENTS
+    boolean dividend_is_greater(String dividend, String divisor){
         String grater = "";
 
         //GETTING RID OF THE EXCESSIVE ZEROS
-        binary1 = num_adjuster(binary1);
-        binary2 = num_adjuster(binary2);
+        dividend = num_adjuster(dividend);
+        divisor = num_adjuster(divisor);
 
-        if(binary1.equals(binary2)){
-            grater = binary1;
-            return grater;
+        if(dividend.equals(divisor)){
+            return true;
         }
 
-        if (binary1.length()>binary2.length()){
-            grater = binary1;
-        }else if (binary2.length()>binary1.length()){
-            grater = binary2;
+        if (dividend.length()>divisor.length()){
+            return true;
+        }else if (divisor.length()>dividend.length()){
+            return false;
         }else{
             //IF THEY ARE EQUAL LENGTH, THEN CHECK THE VALUE THAT THEY REPRESENT
-            for(int i = 0; i<binary1.length(); i++){
-                if (binary1.charAt(i) == binary2.charAt(i)){
-                    grater = "";
+            for(int i = 0; i<dividend.length(); i++){
+                if (dividend.charAt(i) == divisor.charAt(i)){
+                    continue;
                 }else{
-                    if (String.valueOf(binary1.charAt(i)).equals("1")){
-                        grater = binary1;
+                    if (String.valueOf(dividend.charAt(i)).equals("1")){
+                        return true;
                     }else{
-                        grater = binary2;
+                        return false;
                     }
                 }
             }
         }
-
-
-        return grater;
+        return false;
     }
 
 }
