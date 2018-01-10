@@ -11,7 +11,7 @@ public class Operations{
 
 
         String[] arr_a,arr_b, tuple;
-        tuple = aux.length_settler(a,b);
+        tuple = aux.padding_binarries(a,b);
         a = tuple[0];
         b = tuple[1];
 
@@ -97,8 +97,8 @@ public class Operations{
 
        b = aux.two_comp(b);
 
-        a = aux.length_settler(a,b)[0];
-        b = aux.length_settler(a,b)[1];
+        a = aux.padding_binarries(a,b)[0];
+        b = aux.padding_binarries(a,b)[1];
 
         result = sum(a,b);
 
@@ -175,6 +175,19 @@ public class Operations{
             return "1";
         }else{
             String result = "";
+            String div_slice;
+            int start = 0;
+
+            for(int i = 0; i<dividend.length(); i++){
+                div_slice = aux.range_ar(dividend, start, i+1);
+                if(aux.dividend_is_greater(div_slice, divisor)){
+                    result +="1";
+                }else{
+                    result +="0";
+                }
+                aux.print(result);
+            }
+
             return result;
 
         }

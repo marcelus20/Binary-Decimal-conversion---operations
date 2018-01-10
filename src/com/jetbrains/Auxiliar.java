@@ -218,7 +218,7 @@ public class Auxiliar extends Operations{
     * THE LENGTH OF THE BIGGEST, SO IT WILL RECEIVE TWO PARAMETERS
     * */
 
-    String[] length_settler(String a, String b){
+    String[] padding_binarries(String a, String b){
         String[] tuple = new String[2];
         int biggest;
         int d_biggest;
@@ -415,7 +415,7 @@ public class Auxiliar extends Operations{
     *        1110
     * */
     void calc_structure(String a, String b, String operation, String result){
-        String[] tuple = length_settler(a, b);
+        String[] tuple = padding_binarries(a, b);
         a = "  "+binary_mask(tuple[0]);
         b = " " + binary_mask(tuple[1]);
 
@@ -484,6 +484,61 @@ public class Auxiliar extends Operations{
             }
         }
         return false;
+    }
+
+    //THIS SUBTRACTION METHOD IS TO BE SUMMONED AT THE DIVISION OPERATION
+    String div_subtraction(String div_slice, String factor){
+        /*
+        * AS THIS METHOD IS CALLED INTO THE DIVISION OPERATION, THERE WON'T EVER BE A SITUATION THAT
+        *DIV_SLICE IS SMALLER THAN FACTOR, SO THE FUNCTION WILL FOLLOW ASSUMING THAT DIV_SLICE IS GRATER
+        * */
+
+        //PADDING THEM:
+        String[] tuple = padding_binarries(div_slice, factor);
+        div_slice = tuple[0];
+        factor = tuple[1];
+        String result = "";
+
+        String borrow = "0";
+
+
+
+        for (int i = div_slice.length()-1; i>=0 ; i--){
+            String operand_1 = String.valueOf(div_slice.charAt(i));
+            String operand_2 = String.valueOf(factor.charAt(i));
+
+            if(operand_1.equals("1") && borrow.equals("1")){
+                operand_1 = "0";
+                borrow = "0";
+            }
+
+            if(operand_1.equals("1") && operand_2.equals("1")){
+
+                result += "0";
+            }else if(operand_1.equals("1") && operand_2.equals("0")){
+                result += "1";
+            }else if (operand_1.equals("0") && operand_2.equals("0")){
+                if (borrow.equals("1")){
+                    operand_1 = "1";
+                }
+                result += "0";
+            }else{
+                //HERE IS WHERE OPERAND_1 IS ZERO AND OPERAND_2 IS ONE. SO BORROW COMES INTO PLAY
+                if (borrow.equals("1")){
+                    result+="0";
+                    //borrow = "0";
+                }else{
+                    result +="1";
+                    borrow = "1";
+                }
+
+
+            }
+        }
+        //print(borrow);
+        result = num_adjuster(inverter(result));
+
+        return result;
     }
 
 }

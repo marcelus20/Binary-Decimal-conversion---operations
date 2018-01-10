@@ -14,7 +14,7 @@ public class Main extends Application{
         //bin_to_dec("101110.111");
         //print(num_adjuster("0001.00000001"));
         //print(is_double("11.0"));
-        //length_settler("100","10.101010");
+        //padding_binarries("100","10.101010");
         //("111.111");
         //dot_insertion("111111", 3);
         //print(dot_deletion("11.11"));
@@ -28,8 +28,9 @@ public class Main extends Application{
         //print(two_comp("1010"));
         //print(sum("101", "110"));
         //print(range_ar("azul",20,3));
-        print(dividend_is_greater("1100001011","1011111000"));
-        //print(div("111110", "10"));
+        //print(dividend_is_greater("1100001011","1011111000"));
+        //print(div("1010", "10"));
+        print(div_subtraction("101000","010111"));
     }
 
     public static void main(String[] args) {

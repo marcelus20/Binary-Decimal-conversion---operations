@@ -99,8 +99,8 @@ public class Application extends Auxiliar{
         * THE SIZE OF THE BIGGEST, BEING SETTLED WITH SAME LENGTH BOTH
         *
         * */
-        num_1 = length_settler(num_1, num_2)[0];
-        num_2 = length_settler(num_1, num_2)[1];
+        num_1 = padding_binarries(num_1, num_2)[0];
+        num_2 = padding_binarries(num_1, num_2)[1];
 
         //NOW, FINALLY THE CALCULATOR WILL BE CALLED:
         String result = sum(num_1, num_2);
@@ -125,8 +125,8 @@ public class Application extends Auxiliar{
                 "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
 
         // MAKING BOTH NUMBERS HAVE THE SAME LENGTH
-        num1 = length_settler(num1, num2)[0];
-        num2 = length_settler(num1,num2)[1];
+        num1 = padding_binarries(num1, num2)[0];
+        num2 = padding_binarries(num1,num2)[1];
 
         String result = sub(num1, num2);
         //GETTING RID OF THE EXCESSIVE ZEROS (IF THERE IS)
@@ -149,7 +149,7 @@ public class Application extends Auxiliar{
                 "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
         num_2 = number_catcher("Type the first number",
                 "[0-1]*\\.?[0-1]*", "You should type just numbers 1 and 0");
-        tuple = length_settler(num_adjuster(num_1), num_adjuster(num_2));
+        tuple = padding_binarries(num_adjuster(num_1), num_adjuster(num_2));
 
         num_1 = tuple[0];
         num_2 = tuple[1];
