@@ -535,6 +535,18 @@ public class Auxiliar extends Operations{
 
         result = num_adjuster(inverter(result));
 
+        //LOOPING FOR CHECKING IF THE RESULT IS A STRING WITH JUST ZEROS, IF SO, IT WILL BE REDUCED TO 1 BIT
+        boolean only_zeros = true;
+        for (int i = 0; i < result.length(); i++){
+            if(String.valueOf(result.charAt(i)).equals("1")){
+                only_zeros = false;
+            }
+        }
+
+        if (only_zeros){
+            result = range_ar(result, 0, 1);
+        }
+
         return result;
     }
 

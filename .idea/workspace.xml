@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dad6b946-d7a8-4c7b-b701-a5ce58ae8148" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Auxiliar.class" afterPath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Auxiliar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Main.class" afterPath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Operations.class" afterPath="$PROJECT_DIR$/out/production/m_bin/com/jetbrains/Operations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Main.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" afterPath="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="340">
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -28,8 +33,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-87">
-              <caret line="151" column="46" lean-forward="false" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
+            <state relative-caret-position="330">
+              <caret line="144" column="19" lean-forward="false" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
               <folding>
                 <element signature="method#welcome#0;class#Application#0" expanded="false" />
                 <element signature="method#menu#0;class#Application#0" expanded="false" />
@@ -37,6 +42,7 @@
                 <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
                 <element signature="method#add_bin#0;class#Application#0" expanded="false" />
                 <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+                <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,15 +51,14 @@
       <file leaf-file-name="Auxiliar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="531" column="14" lean-forward="false" selection-start-line="531" selection-start-column="14" selection-end-line="531" selection-end-column="14" />
+            <state relative-caret-position="41">
+              <caret line="544" column="0" lean-forward="false" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#number_catcher#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-                <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
                 <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -65,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="207" column="114" lean-forward="true" selection-start-line="207" selection-start-column="114" selection-end-line="207" selection-end-column="114" />
+            <state relative-caret-position="144">
+              <caret line="241" column="18" lean-forward="false" selection-start-line="241" selection-start-column="18" selection-end-line="241" selection-end-column="18" />
               <folding>
                 <element signature="method#sum#0;class#Operations#0" expanded="false" />
                 <element signature="method#sub#0;class#Operations#0" expanded="false" />
@@ -99,6 +104,8 @@
       <find>places_a</find>
       <find>places</find>
       <find>dot</find>
+      <find>num</find>
+      <find>adjus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,9 +121,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/jetbrains/Frame_model.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Application.java" />
-        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java" />
         <option value="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/jetbrains/Operations.java" />
       </list>
     </option>
   </component>
@@ -148,7 +155,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,9 +180,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +255,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -259,13 +266,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2612903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25955057" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15298508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15520945" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -277,6 +283,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -325,6 +332,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -347,7 +355,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -391,6 +398,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -412,7 +420,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -476,7 +483,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -498,6 +504,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -521,6 +528,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -556,7 +564,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -586,6 +593,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -607,7 +615,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -651,6 +658,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,7 +680,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -716,6 +723,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,7 +752,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -787,7 +794,6 @@
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -809,6 +815,7 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,24 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="207" column="114" lean-forward="true" selection-start-line="207" selection-start-column="114" selection-end-line="207" selection-end-column="114" />
-          <folding>
-            <element signature="method#sum#0;class#Operations#0" expanded="false" />
-            <element signature="method#sub#0;class#Operations#0" expanded="false" />
-            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
-            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
-            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="151" column="46" lean-forward="false" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
+        <state relative-caret-position="330">
+          <caret line="144" column="19" lean-forward="false" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
           <folding>
             <element signature="method#welcome#0;class#Application#0" expanded="false" />
             <element signature="method#menu#0;class#Application#0" expanded="false" />
@@ -876,21 +869,21 @@
             <element signature="method#decimal_to_bin#0;class#Application#0" expanded="false" />
             <element signature="method#add_bin#0;class#Application#0" expanded="false" />
             <element signature="method#sub_bin#0;class#Application#0" expanded="false" />
+            <element signature="method#mult_bin#0;class#Application#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Auxiliar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="531" column="14" lean-forward="false" selection-start-line="531" selection-start-column="14" selection-end-line="531" selection-end-column="14" />
+        <state relative-caret-position="41">
+          <caret line="544" column="0" lean-forward="false" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#number_catcher#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#arr_printer_ordered#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#mult_str#0;class#Auxiliar#0" expanded="false" />
-            <element signature="method#num_adjuster#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#is_double#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#inverter#0;class#Auxiliar#0" expanded="false" />
             <element signature="method#dot_insertion#0;class#Auxiliar#0" expanded="false" />
@@ -903,9 +896,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="340">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jetbrains/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="241" column="18" lean-forward="false" selection-start-line="241" selection-start-column="18" selection-end-line="241" selection-end-column="18" />
+          <folding>
+            <element signature="method#sum#0;class#Operations#0" expanded="false" />
+            <element signature="method#sub#0;class#Operations#0" expanded="false" />
+            <element signature="method#bin_to_dec#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#0;class#Operations#0" expanded="false" />
+            <element signature="method#dec_to_bin#1;class#Operations#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

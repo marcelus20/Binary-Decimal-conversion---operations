@@ -162,7 +162,7 @@ public class Operations{
         return result;
 
     }
-    String div(String dividend, String divisor){
+    String division(String dividend, String divisor){
         Auxiliar aux = new Auxiliar();
 
         //ADJUSTING EXCESSIVE ZEROS
@@ -192,15 +192,68 @@ public class Operations{
                     //aux.system_pause();
                 }
                 //aux.print(div_slice);
+                //aux.system_pause();
+                if(i == dividend.length()-1 && !div_slice.equals("0")){
+                    result +=".";
+                    int len = 0;
+                    while(!div_slice.equals("0")){
+                        while(!aux.dividend_is_greater(div_slice, divisor)){
+                            div_slice +="0";
+                            result+="0";
+                            //aux.print(div_slice);
+                            //aux.system_pause();
+
+                        }
+                        result+="1";
+                        div_slice = aux.div_subtraction(div_slice, divisor);
+                        //aux.print(result);
+
+                        if (len !=10){
+                            len++;
+                        }else{
+                            div_slice = "0";
+                        }
+
+                    }
+                }
+                //aux.print(div_slice);
             }
 
             return  aux.num_adjuster(result);
 
         }else{
+            //IF CODE REACHES HERE, IT MEANS THE RESULT WILL BE SMALLER THAN 1
+            String result = "0.";
+            String div_slice = aux.div_subtraction(dividend, divisor);
+            int len = 0;
 
-            return "";
+            while(!div_slice.equals("0")){
+
+                while(!aux.dividend_is_greater(div_slice, divisor)){
+                    div_slice +="0";
+                    result+="0";
+                    //aux.print(div_slice);
+                    //aux.system_pause();
+
+                }
+                result+="1";
+                div_slice = aux.div_subtraction(div_slice, divisor);
+                //aux.system_pause();
+                //aux.print(result);
+
+                if (len != 10){
+                    len++;
+                }else{
+                    div_slice = "0";
+                }
+
+            }
+            return result;
         }
+
     }
+
+
 
     //CONVERTIONS
 
@@ -284,7 +337,7 @@ public class Operations{
 
     /*
     * FOR CARRYING OUT THE DECIMAL TO BINARY CONVERTION, IT HAS BEEN USED THE OVERLOAD CONCEPTION.
-    * AS THE PARAMETER CAN BE EITHER INT OR DOUBLE, I CREATED TWO FUNCTION WITH THE SAME NAME (OVERLOADING)
+    * AS THE PARAMETER CAN BE EITHER INT OR DOUBLE, I CREATED TWO FUNCTIONS WITH THE SAME NAME (OVERLOADING)
     * AND FIRST ONE WILL RECEIVE ONLY INT ARGUMENT. IF THERE IS A DOUBLE ARGUMENT IT WILL GO TO THE SECOND.
     * */
     String dec_to_bin(int number){
